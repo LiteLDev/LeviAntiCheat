@@ -1,42 +1,42 @@
 # LeviAntiCheat
 
-Powerful anti-cheating for LeviLamina
+为LeviLamina提供强大的反作弊支持
 
-## Install
+## 安装
 
 ```bash
 lip install github.com/LiteLDev/LeviAntiCheat
 ```
 
-## Commands
+## 命令
 
-`/lac ban <Player> [reason] [duration(minute)]` Ban a player manually
-`/lac unban <Player>` Pardon a player manually
+`/lac ban <玩家> [原因] [时长(分钟)]` 手动封禁玩家
+`/lac unban <玩家>` 手动解封玩家
 
-## Configuration File
+## 配置文件
 
 ```jsonc
 {
     "version": 1,
-    "consoleLog": true,
+    "consoleLog": true, // 控制台日志
     "worldSafety": {
-        "fakeSeed": {
+        "fakeSeed": { // 假种子
             "enable": true,
             "randomSeed": false,
             "seed": 0
         },
-        "offlineInventoryProtection": false,
-        "illegalBreakingCheck": true
+        "offlineInventoryProtection": false, // 防止离线服务器玩家丢背包
+        "illegalBreakingCheck": true // 非法破坏检测
     },
     "cheatPrevention": {
-        "antiXray": {
+        "antiXray": { // 反矿透
             "enable": true,
             "DimensionConfigs": {
                 "overworld": {
                     "Enable": true,
                     "EngineMode": 2,
                     "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 64,
+                    "MaxBlockHeight": 64, // 最大高度
                     "HiddenBlocks": [
                         "minecraft:copper_ore",
                         "minecraft:deepslate_copper_ore",
@@ -84,27 +84,27 @@ lip install github.com/LiteLDev/LeviAntiCheat
                 }
             }
         },
-        "antiToolbox": true,
-        "antiFakeName": true,
-        "antiSpawnXpOrbs": true,
-        "antiXpHack": true
+        "antiToolbox": true, // 反Toolbox
+        "antiFakeName": true, // 反假名
+        "antiSpawnXpOrbs": true, // 反刷经验
+        "antiXpHack": true // 反刷经验
     },
     "bugFixes": {
-        "uiItemDuplicateFix": true,
-        "sleepTeleportFix": true
+        "uiItemDuplicateFix": true, // UI刷物修复
+        "sleepTeleportFix": true // 睡眠传送修复
     },
     "inventoryManagement": {
-        "antiAutoOffhand": true,
-        "rectifyUiItemDrop": true,
-        "invalidItemDetection": true,
-        "anvilEnchantLimits": true,
-        "invalidStackDetection": true,
-        "antiInvalidNbtItem": true,
-        "banItem": {
+        "antiAutoOffhand": true, // 阻止自动切换副手
+        "rectifyUiItemDrop": true, // 防止通过材质包做到死亡不掉落
+        "invalidItemDetection": true, // 非法物品检查
+        "anvilEnchantLimits": true, // 铁站附魔限制
+        "invalidStackDetection": true, // 反非法堆叠
+        "antiInvalidNbtItem": true, // 反非法NBT物品
+        "banItem": { // 禁用物品
             "enable": true,
             "blacklist": []
         },
-        "enchantCheck": {
+        "enchantCheck": { // 附魔等级检查
             "enable": false,
             "maxEnchantLevel": {
                 "example_enchant": 5
@@ -112,21 +112,21 @@ lip install github.com/LiteLDev/LeviAntiCheat
         }
     },
     "playerInteractions": {
-        "illegallyTradeRestrictions": true,
-        "antiSpam": {
+        "illegallyTradeRestrictions": true, // 非法交易限制
+        "antiSpam": { // 反刷屏
             "enable": true,
             "maxChatLength": 60,
             "maxRate": 1
         },
-        "itemNameLengthCheck": {
+        "itemNameLengthCheck": { // 物品最大名称长度
             "enable": true,
             "maxStringLength": 90
         }
     },
     "movement": {
-        "containerMoveCheck": true,
-        "illegalMovementCheck": true,
-        "timerCheck": {
+        "containerMoveCheck": true, // 开背包移动
+        "illegalMovementCheck": true, // 移动检测
+        "timerCheck": { // 变速齿轮
             "enable": true,
             "maxPacketSpeed": 24,
             "detectLevel": 15
@@ -137,86 +137,85 @@ lip install github.com/LiteLDev/LeviAntiCheat
         }
     },
     "combat": {
-        "autoClickCheck": {
+        "autoClickCheck": { // 连点器
             "enable": true,
-            "maxCps": 10,
+            "maxCps": 10, // 最大CPS
             "detectLevel": 10
         },
-        "reachDistanceCheck": {
+        "reachDistanceCheck": { // 长臂猿
             "enable": true,
             "detectLevel": 5
         }
     },
     "securityMeasures": {
-        "antiLoginFloodCheck": false
+        "antiLoginFloodCheck": false // 启用LoginFlood防护，如果您正在使用frp等代理服务，请勿启用
     },
     "punish": {
-        "enable": true,
-        "kickVL": 100,
-        "banVL": -1,
-        "banDuration": 0
+        "enable": true, // 启用内置惩罚系统
+        "kickVL": 100, // 玩家VL达到此值后，将被踢出，-1为禁用
+        "banVL": -1, // 玩家VL达到此值后，将被封禁，-1为禁用
+        "banDuration": 0 // 封禁时长，以分钟为单位，0为永久
     }
 }
 ```
 
-## Features
+## 特性
 
-### Bugfixes
+### 修复错误
 
-- Fix UI item duplication
-- Fix sleep teleport
+- 修复UI物品复制问题
+- 修复睡眠传送问题
 
-### Client Cheating
+### 客户端作弊
 
-- Prevent X-ray vision of minerals
-- Prevent Toolbox using
-- Prevent auto click
-- Prevent Reach
-- Prevent fake name
-- Prevent spawn xp orbs
-- Prevent `xp` hack
-- 
+- 防止矿物X光视觉
+- 防止使用工具箱
+- 防止自动点击
+- 防止超出正常范围操作
+- 防止伪造名称
+- 防止生成经验球
+- 防止`xp`作弊
 
-### Inventory
+### 物品栏
 
-- Check anvil enchantment
-- Prevent automatic tool selection
-- Prevent invalid items
-- Prevent invalid nbt items
-- Ban illegal items
-- Check enchantment level
-- Prevent invalid stack
-- Prevent some resource packs cheating
+- 检查铁砧附魔
+- 防止自动选择工具
+- 防止无效物品
+- 防止无效nbt物品
+- 封禁非法物品
+- 检查附魔等级
+- 防止无效堆叠
+- 防止某些资源包作弊
 
-### Movement
+### 移动
 
-- Prevent interacting with containers while moving
-- Prevent illegal movement such as fly, speed hack, wall hack
-- Prevent NoPacket
-- Prevent Timer(another type of speed hack by adjust client's speed)
+- 防止在移动时与容器互动
+- 防止非法移动，如飞行、加速、穿墙
+- 防止NoPacket
+- 防止Timer（通过调整客户端速度的另一种加速作弊）
 
-### Interaction
+### 互动
 
-- Prevent illegal trades
-- Prevent long item nametag
-- Prevent spam(including selector spam, command spam etc.)
+- 防止非法交易
+- 防止物品名称标签过长
+- 防止垃圾信息（包括选择器垃圾信息、命令垃圾信息等）
 
-### Secure
+### 安全
 
-- Prevent LoginFlood attack
+- 防止LoginFlood攻击
 
-### World
+### 世界
 
-- Fake seed
-- Prevent illegal breaking
-- Patch player's inventory when online mode is off
+- 伪造种子
+- 防止非法破坏
+- 在线模式关闭时修补玩家的物品栏
 
-## Contributing
+## 贡献
 
-Ask questions by creating an issue.
+通过创建问题提问。
 
-Since this project is closed source, you can't contribute to the code directly.
+由于该项目是闭源的，您无法直接对代码进行贡献。
 
-## License
+## 许可证
 
-Copyright © LiteLDev
+版权所有 © LiteLDev
