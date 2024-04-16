@@ -1,0 +1,19 @@
+{
+  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "You have been banned. Reason: {0} Time: {1} Pardon time: {2}",
+  "You have been banned.": "Вы были заблокированы.",
+  "LeviAntiCheat's main command": "Главная команда LeviAntiCheat's",
+  "Player not found": "Игрок не найден",
+  "Dimension (name:{}, id:{}) not found in AntiXray config": "Параметр (имя:{}, id:{}) не найден в конфигурации AntiXray",
+  "unidentified engine mode: {} antixray won't work, check https://docs.papermc.io/paper/anti-xray for more detail": "неопознанный режим движка: {} antixray не работает, проверьте https://docs.papermc.io/paper/anti-xray для получения более подробной информации",
+  "antixray engine mode required at least one replacement block": "режим антирентгеновского двигателя требуется по крайней мере один блок замены",
+  "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood из {0} обнаружен, адрес был добавлен в черный список",
+  "{0} has been banned by BanWave": "{0} был забанен BanWave",
+  "{0} has been kicked by BanWave": "{0} был кикнут BanWave",
+  "You have been kicked. Don't use cheats! Time: {0}": "Вы были выгнаны. Не используйте читы! Время: {0}",
+  "Warning: don't use cheats!": "Внимание: не используйте читы!",
+  "{0} has been muted for {1}": "{0} был заглушен за {1}",
+  "{0} has been kicked for {1}": "{0} был кикнут за {1}",
+  "{0} has been banned for {1}": "{0} был забанен на {1}",
+  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" обнаружено использование: {1}, {2}",
+  "\"{0}\" has been detected using: {1}": "\"{0}\" был обнаружен с помощью: {1}"
+}

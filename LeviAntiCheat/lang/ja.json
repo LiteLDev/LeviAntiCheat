@@ -1,0 +1,19 @@
+{
+  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "あなたは禁止されています。理由： {0} 時間： {1} 熟考時間： {2}",
+  "You have been banned.": "あなたは禁止されています。",
+  "LeviAntiCheat's main command": "LeviAntiCheatのメインコマンド",
+  "Player not found": "プレイヤーが見つかりません",
+  "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimension (name:{}, id:{}) が AntiXray 設定に見つかりません",
+  "unidentified engine mode: {} antixray won't work, check https://docs.papermc.io/paper/anti-xray for more detail": "未確認のエンジンモード: {} antixray は動作しません。詳細については https://docs.papermc.io/paper/anti-xray を確認してください。",
+  "antixray engine mode required at least one replacement block": "アンチxrayエンジンモードには少なくとも1つの交換ブロックが必要です",
+  "LoginFlood from {0} detected, the address has been added to black list": "{0} からLoginFloodが検出されました。アドレスがブラックリストに追加されました",
+  "{0} has been banned by BanWave": "{0} は BanWave によって禁止されています",
+  "{0} has been kicked by BanWave": "{0} は BanWave によってキックされました",
+  "You have been kicked. Don't use cheats! Time: {0}": "あなたはキックされました。チートを使用しないでください！時間： {0}",
+  "Warning: don't use cheats!": "警告: チートを使用しないでください!",
+  "{0} has been muted for {1}": "{0} は {1} の間ミュートされました",
+  "{0} has been kicked for {1}": "{0} は {1} のためにキックされました",
+  "{0} has been banned for {1}": "{0} は {1} に対してBANされました",
+  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" が使用して検出されました: {1}, {2}",
+  "\"{0}\" has been detected using: {1}": "\"{0}\" が検出されました: {1}"
+}

@@ -1,0 +1,19 @@
+{
+  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "You have been banned. Reason: {0} Time: {1} Pardon time: {2}",
+  "You have been banned.": "You have been banned.",
+  "LeviAntiCheat's main command": "LeviAntiCheat's main command",
+  "Player not found": "Player not found",
+  "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimension (name:{}, id:{}) not found in AntiXray config",
+  "unidentified engine mode: {} antixray won't work, check https://docs.papermc.io/paper/anti-xray for more detail": "unidentified engine mode: {} antixray won't work, check https://docs.papermc.io/paper/anti-xray for more detail",
+  "antixray engine mode required at least one replacement block": "antixray engine mode required at least one replacement block",
+  "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood from {0} detected, the address has been added to black list",
+  "{0} has been banned by BanWave": "{0} has been banned by BanWave",
+  "{0} has been kicked by BanWave": "{0} has been kicked by BanWave",
+  "You have been kicked. Don't use cheats! Time: {0}": "You have been kicked. Don't use cheats! Time: {0}",
+  "Warning: don't use cheats!": "Warning: don't use cheats!",
+  "{0} has been muted for {1}": "{0} has been muted for {1}",
+  "{0} has been kicked for {1}": "{0} has been kicked for {1}",
+  "{0} has been banned for {1}": "{0} has been banned for {1}",
+  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" has been detected using: {1}, {2}",
+  "\"{0}\" has been detected using: {1}": "\"{0}\" has been detected using: {1}"
+}
