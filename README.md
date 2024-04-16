@@ -1,5 +1,7 @@
 # LeviAntiCheat
 
+English | [简体中文](README-zh_CN.md)
+
 Powerful anti-cheating for LeviLamina
 
 ## Install
