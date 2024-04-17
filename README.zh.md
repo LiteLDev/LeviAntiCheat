@@ -1,6 +1,7 @@
 # LeviAntiCheat
 
-[English](README.md) | 简体中文
+[![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.md)
+![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge)
 
 为LeviLamina提供强大的反作弊支持
 
@@ -10,12 +11,16 @@
 lip install github.com/LiteLDev/LeviAntiCheat
 ```
 
-## 命令
+## 使用
+
+### 命令
 
 `/lac ban <玩家> [原因] [时长(分钟)]` 手动封禁玩家
 `/lac unban <玩家>` 手动解封玩家
 
-## 配置文件
+### 配置文件
+
+For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {

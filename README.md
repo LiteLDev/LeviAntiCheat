@@ -1,6 +1,7 @@
 # LeviAntiCheat
 
-English | [简体中文](README-zh_CN.md)
+![English](https://img.shields.io/badge/English-inactive?style=for-the-badge)
+[![中文](https://img.shields.io/badge/简体中文-informational?style=for-the-badge)](README.zh.md)
 
 Powerful anti-cheating for LeviLamina
 
@@ -10,12 +11,16 @@ Powerful anti-cheating for LeviLamina
 lip install github.com/LiteLDev/LeviAntiCheat
 ```
 
-## Commands
+## Usage
+
+### Commands
 
 `/lac ban <Player> [reason] [duration(minute)]` Ban a player manually
 `/lac unban <Player>` Pardon a player manually
 
-## Configuration File
+### Configuration
+
+For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
