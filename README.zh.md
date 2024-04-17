@@ -93,12 +93,12 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         },
         "antiToolbox": true, // 反Toolbox
         "antiFakeName": true, // 反假名
-        "antiSpawnXpOrbs": true, // 反刷经验
+        "antiSpawnXpOrbs": true, // 反刷经验球
         "antiXpHack": true // 反刷经验
     },
     "bugFixes": {
         "uiItemDuplicateFix": true, // UI刷物修复
-        "sleepTeleportFix": true // 睡眠传送修复
+        "sleepTeleportFix": true // 床超传修复
     },
     "inventoryManagement": {
         "antiAutoOffhand": true, // 阻止自动切换副手
@@ -131,34 +131,34 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         }
     },
     "movement": {
-        "containerMoveCheck": true, // 开背包移动
-        "illegalMovementCheck": true, // 移动检测
-        "timerCheck": { // 变速齿轮
+        "containerMoveCheck": true, // 开背包移动检测
+        "illegalMovementCheck": true, // 非法移动检测
+        "timerCheck": { // 变速齿轮检测
             "enable": true,
             "maxPacketSpeed": 24,
             "detectLevel": 15
         },
-        "noPacketCheck": {
+        "noPacketCheck": { // 停止发包检测
             "enable": true,
             "maxNoPacketTime": 5
         }
     },
     "combat": {
-        "autoClickCheck": { // 连点器
+        "autoClickCheck": { // 连点器检测
             "enable": true,
             "maxCps": 10, // 最大CPS
             "detectLevel": 10
         },
-        "reachDistanceCheck": { // 长臂猿
+        "reachDistanceCheck": { // 长臂猿检测
             "enable": true,
             "detectLevel": 5
         }
     },
     "securityMeasures": {
-        "antiLoginFloodCheck": false // 启用LoginFlood防护，如果您正在使用frp等代理服务，请勿启用
+        "antiLoginFloodCheck": false // Login泛洪防护，如果您正在使用frp等代理服务，请勿启用
     },
     "punish": {
-        "enable": true, // 启用内置惩罚系统
+        "enable": true, // 内置惩罚系统
         "kickVL": 100, // 玩家VL达到此值后，将被踢出，-1为禁用
         "banVL": -1, // 玩家VL达到此值后，将被封禁，-1为禁用
         "banDuration": 0 // 封禁时长，以分钟为单位，0为永久
@@ -171,7 +171,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 ### 修复错误
 
 - 修复UI物品复制问题
-- 修复睡眠传送问题
+- 修复床超传问题
 
 ### 客户端作弊
 
@@ -198,7 +198,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 - 防止在移动时与容器互动
 - 防止非法移动，如飞行、加速、穿墙
-- 防止NoPacket
+- 防止停止发包
 - 防止Timer（通过调整客户端速度的另一种加速作弊，也称变速齿轮）
 
 ### 互动
@@ -209,7 +209,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ### 安全
 
-- 防止LoginFlood攻击
+- 防止Login泛洪攻击
 
 ### 世界
 
