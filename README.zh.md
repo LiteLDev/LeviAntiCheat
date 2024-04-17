@@ -24,7 +24,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
-    "version": 1,
+    "version": 2,
     "consoleLog": true, // 控制台日志
     "worldSafety": {
         "fakeSeed": { // 假种子
@@ -63,14 +63,59 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:coal_ore"
                     ],
                     "ReplacementBlocks": [
+                        "minecraft:amethyst_block",
+                        "minecraft:andesite",
+                        "minecraft:gravel",
+                        "minecraft:budding_amethyst",
+                        "minecraft:calcite",
+                        "minecraft:deepslate_emerald_ore",
+                        "minecraft:oak_planks",
+                        "minecraft:tuff",
+                        "minecraft:deepslate",
+                        "minecraft:coal_ore",
+                        "minecraft:deepslate_coal_ore",
+                        "minecraft:smooth_basalt",
+                        "minecraft:diorite",
+                        "minecraft:stone",
+                        "minecraft:dirt",
+                        "minecraft:emerald_ore",
+                        "minecraft:granite"
+                    ]
+                },
+                "overworld(engine mode 1 example)": {
+                    "Enable": true,
+                    "EngineMode": 1,
+                    "UpdateRadius": 1.0,
+                    "MaxBlockHeight": 64,
+                    "HiddenBlocks": [
+                        "minecraft:coal_ore",
+                        "minecraft:raw_copper_block",
+                        "minecraft:deepslate_coal_ore",
+                        "minecraft:copper_ore",
+                        "minecraft:deepslate_copper_ore",
+                        "minecraft:diamond_ore",
+                        "minecraft:emerald_ore",
+                        "minecraft:raw_iron_block",
+                        "minecraft:deepslate_diamond_ore",
+                        "minecraft:redstone_ore",
+                        "minecraft:deepslate_emerald_ore",
+                        "minecraft:gold_ore",
+                        "minecraft:deepslate_gold_ore",
+                        "minecraft:iron_ore",
+                        "minecraft:deepslate_iron_ore",
+                        "minecraft:lapis_ore",
+                        "minecraft:deepslate_lapis_ore",
+                        "minecraft:deepslate_redstone_ore"
+                    ],
+                    "ReplacementBlocks": [
                         "minecraft:stone",
                         "minecraft:deepslate"
                     ]
                 },
                 "nether": {
                     "Enable": true,
-                    "EngineMode": 3,
-                    "UpdateRadius": 2.0,
+                    "EngineMode": 1,
+                    "UpdateRadius": 1.0,
                     "MaxBlockHeight": 128,
                     "HiddenBlocks": [
                         "minecraft:ancient_debris",
@@ -79,6 +124,30 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     ],
                     "ReplacementBlocks": [
                         "minecraft:netherrack"
+                    ]
+                },
+                "nether(engine mode 2 or 3 example)": {
+                    "Enable": true,
+                    "EngineMode": 3,
+                    "UpdateRadius": 2.0,
+                    "MaxBlockHeight": 128,
+                    "HiddenBlocks": [
+                        "minecraft:glowstone",
+                        "minecraft:ancient_debris",
+                        "minecraft:quartz_ore",
+                        "minecraft:bone_block",
+                        "minecraft:magma_block",
+                        "minecraft:nether_bricks",
+                        "minecraft:nether_gold_ore",
+                        "minecraft:polished_blackstone_bricks"
+                    ],
+                    "ReplacementBlocks": [
+                        "minecraft:basalt",
+                        "minecraft:blackstone",
+                        "minecraft:soul_soil",
+                        "minecraft:gravel",
+                        "minecraft:netherrack",
+                        "minecraft:soul_sand"
                     ]
                 },
                 "the end": {
@@ -98,7 +167,8 @@ For X-Ray prevention, see [here](anti_x_ray.md).
     },
     "bugFixes": {
         "uiItemDuplicateFix": true, // UI刷物修复
-        "sleepTeleportFix": true // 床超传修复
+        "sleepTeleportFix": true, // 床超传修复
+        "gatewayCopyFix": true // 折跃门刷掉落方块
     },
     "inventoryManagement": {
         "antiAutoOffhand": true, // 阻止自动切换副手
@@ -122,8 +192,9 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "illegallyTradeRestrictions": true, // 非法交易限制
         "antiSpam": { // 反刷屏
             "enable": true,
-            "maxChatLength": 60,
-            "maxRate": 1
+            "maxChatLength": 300,
+            "maxRate": 5,
+            "disableSelector": true
         },
         "itemNameLengthCheck": { // 物品最大名称长度
             "enable": true,
@@ -131,8 +202,12 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         }
     },
     "movement": {
-        "containerMoveCheck": true, // 开背包移动检测
-        "illegalMovementCheck": true, // 非法移动检测
+        "illegalMovementCheck": { // 非法移动检测
+            "enable": true,
+            "maxMismatchDistance": 1.0, // 最大不匹配距离
+            "triggerReplayDistance": 2.0, // 触发回放的距离
+            "detectLevel": 2
+        },
         "timerCheck": { // 变速齿轮检测
             "enable": true,
             "maxPacketSpeed": 24,
@@ -172,6 +247,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 - 修复UI物品复制问题
 - 修复床超传问题
+- 折跃门刷掉落方块的问题
 
 ### 客户端作弊
 
