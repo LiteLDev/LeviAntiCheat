@@ -65,19 +65,19 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "ReplacementBlocks": [
                         "minecraft:amethyst_block",
                         "minecraft:andesite",
-                        "minecraft:gravel",
-                        "minecraft:budding_amethyst",
+                        "minecraft:deepslate",
                         "minecraft:calcite",
                         "minecraft:deepslate_emerald_ore",
                         "minecraft:oak_planks",
                         "minecraft:tuff",
-                        "minecraft:deepslate",
+                        "minecraft:budding_amethyst",
+                        "minecraft:gravel",
                         "minecraft:coal_ore",
                         "minecraft:deepslate_coal_ore",
-                        "minecraft:smooth_basalt",
                         "minecraft:diorite",
-                        "minecraft:stone",
+                        "minecraft:smooth_basalt",
                         "minecraft:dirt",
+                        "minecraft:stone",
                         "minecraft:emerald_ore",
                         "minecraft:granite"
                     ]
@@ -93,12 +93,12 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:deepslate_coal_ore",
                         "minecraft:copper_ore",
                         "minecraft:deepslate_copper_ore",
-                        "minecraft:diamond_ore",
                         "minecraft:emerald_ore",
                         "minecraft:raw_iron_block",
+                        "minecraft:diamond_ore",
                         "minecraft:deepslate_diamond_ore",
-                        "minecraft:redstone_ore",
                         "minecraft:deepslate_emerald_ore",
+                        "minecraft:redstone_ore",
                         "minecraft:gold_ore",
                         "minecraft:deepslate_gold_ore",
                         "minecraft:iron_ore",
@@ -126,16 +126,24 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:netherrack"
                     ]
                 },
+                "the end": {
+                    "Enable": false,
+                    "EngineMode": 1,
+                    "UpdateRadius": 2.0,
+                    "MaxBlockHeight": 0,
+                    "HiddenBlocks": [],
+                    "ReplacementBlocks": []
+                },
                 "nether(engine mode 2 or 3 example)": {
                     "Enable": true,
                     "EngineMode": 3,
                     "UpdateRadius": 2.0,
                     "MaxBlockHeight": 128,
                     "HiddenBlocks": [
-                        "minecraft:glowstone",
                         "minecraft:ancient_debris",
-                        "minecraft:quartz_ore",
+                        "minecraft:glowstone",
                         "minecraft:bone_block",
+                        "minecraft:quartz_ore",
                         "minecraft:magma_block",
                         "minecraft:nether_bricks",
                         "minecraft:nether_gold_ore",
@@ -144,19 +152,11 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "ReplacementBlocks": [
                         "minecraft:basalt",
                         "minecraft:blackstone",
-                        "minecraft:soul_soil",
                         "minecraft:gravel",
+                        "minecraft:soul_soil",
                         "minecraft:netherrack",
                         "minecraft:soul_sand"
                     ]
-                },
-                "the end": {
-                    "Enable": false,
-                    "EngineMode": 1,
-                    "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 0,
-                    "HiddenBlocks": [],
-                    "ReplacementBlocks": []
                 }
             }
         },
@@ -206,7 +206,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
             "enable": true,
             "maxMismatchDistance": 1.0,
             "triggerReplayDistance": 2.0,
-            "detectLevel": 2
+            "detectLevel": 5
         },
         "timerCheck": {
             "enable": true,
