@@ -4,7 +4,7 @@
   "LeviAntiCheat's main command": "Comando principal do LeviAntiCheat",
   "Player not found": "Jogador não encontrado",
   "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensão (nome:{}, id:{}) não foi encontrado na configuração do AntíXray",
-  "unidentified engine mode: {} antixray won't work, check https://docs.papermc.io/paper/anti-xray for more detail": "Modo do motor não identificado: {} antixray não vai funcionar, consulte https://docs.papermc.io/paper/anti-xray para mais detalhes",
+  "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Modo do motor não identificado: {} antixray não vai funcionar, consulte https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md para mais detalhes",
   "antixray engine mode required at least one replacement block": "modo de motor antixray necessário pelo menos um bloco de substituição",
   "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood de {0} detectado, o endereço foi adicionado à lista negra",
   "{0} has been banned by BanWave": "{0} foi banido pelo BanWave",
