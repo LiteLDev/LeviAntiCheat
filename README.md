@@ -15,7 +15,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ### Commands
 
-`/lac ban <Player> [reason] [duration(minute)]` Ban a player manually
+`/lac ban <Player> [reason] [duration(minute)]` Ban a player manually  
 `/lac unban <Player>` Pardon a player manually
 
 ### Configuration
