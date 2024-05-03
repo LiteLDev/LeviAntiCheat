@@ -302,3 +302,9 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 ## 许可证
 
 版权所有 © LiteLDev
+
+未经LiteLDev事先书面同意，用户不得实施下列行为：
+
+1. 反编译（de-compile）、反汇编（disassemble）和任何方式修改LeviAnticheat的全部或部分内容，或对LeviAntiCheat任何功能或程序进行反向工程（reverse engineering）。
+
+1. 出租、销售LeviAntiCheat。
