@@ -303,3 +303,9 @@ Since this project is closed source, you can't contribute to the code directly.
 ## License
 
 Copyright © LiteLDev
+
+Without the prior written consent of LiteLDev, users shall not perform the following actions:
+
+1. Decompile, disassemble and modify all or part of LeviAnticheat in any way, or reverse engineer any function or program of LeviAntiCheat.
+
+1. Rent and sell LeviAntiCheat.
