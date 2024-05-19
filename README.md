@@ -18,7 +18,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 `/lac ban <Player> [reason] [duration(minute)]` Ban a player manually  
 `/lac unban <Player>` Pardon a player manually
 
-### Configuration
+### Configuration file
 
 For X-Ray prevention, see [here](anti_x_ray.md).
 
@@ -293,6 +293,10 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 - Fake seed
 - Prevent illegal breaking
 - Patch player's inventory when online mode is off
+
+## Development
+
+You can develop your own punishment system based on [LeviPenalizeCheat](https://github.com/LiteLDev/LeviPenalizeCheat)
 
 ## Contributing
 

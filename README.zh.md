@@ -293,6 +293,10 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 - 防止非法破坏
 - 修复离线模式玩家背包丢失问题
 
+## 开发
+
+你可以基于 [LeviPenalizeCheat](https://github.com/LiteLDev/LeviPenalizeCheat) 来开发自己的惩罚系统
+
 ## 贡献
 
 通过创建Issue提问。
