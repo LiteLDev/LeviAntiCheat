@@ -10,6 +10,8 @@ dimension. In contrast, `engine-mode: 2` will replace both `hidden-blocks` and `
 with randomly generated `hidden-blocks`. `engine-mode: 3` works similarly to `engine-mode: 2`, but instead of
 randomizing every block, it randomizes the block for each layer of a chunk.
 
+> Note: The block will be obfuscated only if it's covered by HiddenBlocks or ReplacementBlocks on all six sides.
+
 The following images[^1] show how each mode will look for a player using Xray with the recommended
 configuration in both the overworld and nether.
 
@@ -23,8 +25,7 @@ configuration in both the overworld and nether.
 Especially on the client side, `engine-mode: 1` is much less computationally intensive, while
 `engine-mode: 2` may better prevent Xray. With `engine-mode: 1`, only ores that are entirely covered
 by solid blocks will be hidden. Ores exposed to air in caves or water from a lake will not be
-hidden. With `engine-mode: 2`, fake ores obstruct the view of real blocks. If `air` is added to
-`hidden-blocks`, `engine-mode: 2` will effectively hide all ores, even those exposed to air. `engine-mode: 3` can reduce network load when joining by a factor of ~2 and helps with chunk packet compression.
+hidden. With `engine-mode: 2`, fake ores obstruct the view of real blocks. `engine-mode: 3` can reduce network load when joining by a factor of ~2 and helps with chunk packet compression.
 
 > # Anti-Xray Bypasses
 > 
