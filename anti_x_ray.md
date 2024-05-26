@@ -181,7 +181,8 @@ The recommended configuration for `engine-mode: 1`, `engine-mode: 2` and `engine
         "minecraft:smooth_basalt",
         "minecraft:stone",
         "minecraft:tuff"
-    ]
+    ],
+    "SolidBlocks": []
 }
 ```
 
@@ -197,6 +198,14 @@ The recommended configuration for `engine-mode: 1`, `engine-mode: 2` and `engine
     "UpdateRadius": 2.0,
     "MaxBlockHeight": 128,
     "HiddenBlocks": [
+        "minecraft:basalt",
+        "minecraft:blackstone",
+        "minecraft:gravel",
+        "minecraft:soul_soil",
+        "minecraft:netherrack",
+        "minecraft:soul_sand"
+    ],
+    "ReplacementBlocks": [
         "minecraft:ancient_debris",
         "minecraft:glowstone",
         "minecraft:bone_block",
@@ -206,14 +215,7 @@ The recommended configuration for `engine-mode: 1`, `engine-mode: 2` and `engine
         "minecraft:nether_gold_ore",
         "minecraft:polished_blackstone_bricks"
     ],
-    "ReplacementBlocks": [
-        "minecraft:basalt",
-        "minecraft:blackstone",
-        "minecraft:gravel",
-        "minecraft:soul_soil",
-        "minecraft:netherrack",
-        "minecraft:soul_sand"
-    ]
+    "SolidBlocks": []
 }
 ```
 
