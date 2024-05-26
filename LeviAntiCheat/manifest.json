@@ -1,6 +1,6 @@
 {
-    "name": "${pluginName}",
-    "entry": "${pluginFile}",
+    "name": "LeviAntiCheat",
+    "entry": "LeviAntiCheat.dll",
     "type": "native",
     "description": "Lightweight anti-cheating for LeviLamina",
     "author": "LiteLDev",
