@@ -74,6 +74,21 @@ The recommended configuration for `engine-mode: 1`, `engine-mode: 2` and `engine
     "ReplacementBlocks": [
         "minecraft:stone",
         "minecraft:deepslate"
+    ],
+    "SolidBlocks": [
+        "minecraft:calcite",
+        "minecraft:oak_planks",
+        "minecraft:tuff",
+        "minecraft:amethyst_block",
+        "minecraft:andesite",
+        "minecraft:budding_amethyst",
+        "minecraft:gravel",
+        "minecraft:deepslate",
+        "minecraft:diorite",
+        "minecraft:smooth_basalt",
+        "minecraft:dirt",
+        "minecraft:stone",
+        "minecraft:granite"
     ]
 }
 ```
@@ -96,6 +111,15 @@ The recommended configuration for `engine-mode: 1`, `engine-mode: 2` and `engine
     ],
     "ReplacementBlocks": [
         "minecraft:netherrack"
+    ],
+    "SolidBlocks": [
+        "minecraft:netherrack",
+        "minecraft:magma",
+        "minecraft:blackstone",
+        "minecraft:basalt",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+        "minecraft:gravel"
     ]
 }
 ```
@@ -112,7 +136,7 @@ The recommended configuration for `engine-mode: 1`, `engine-mode: 2` and `engine
 
 ```json
 "overworld": {
-        "Enable": true,
+    "Enable": true,
     "EngineMode": 2,
     "UpdateRadius": 2.0,
     "MaxBlockHeight": 64,
@@ -235,4 +259,100 @@ see them in-game using X-ray, this can have the following reasons:
   `deepslate` variants.
 * If it doesn't work above a certain y-level, check your `max-block-height` setting.
 
+</details>
+
+
+## inside Obfuscate engine
+
+<details>
+    <summary>Obfuscate engine outline</summary>
+    
+* The following code outlines the processing flow of the ObfuscateEngine. If you have any questions about the details, please refer to the code below.
+
+```cpp
+var checkOffset = {
+    {1,  0,  0 },
+    {-1, 0,  0 },
+    {0,  1,  0 },
+    {0,  -1, 0 },
+    {0,  0,  1 },
+    {0,  0,  -1}
+};
+
+// Engine Mode 1 refers to clear mode
+// replaces specified blocks (hidden-blocks) with other "fake" blocks, stone (deepslate at y < 0), netherrack, or
+// end_stone based on the dimension.
+// fake blocks for dimensions are ReplacementBlocks[0] for y>=0 and [1] for y<0
+void Engine::Engine_Mode_1() {
+    var ReplacementBlocks = config.ReplacementBlocks;
+    var HiddenBlockSet    = config.HiddenBlocks;                      // SL_OBFS | SL_SOLID
+    var SolidBlocks       = config.SolidBlocks + config.HiddenBlocks; // SL_SOLID
+
+    var minHeight = (Chunk->getHeightRange().first << 4) + 1;
+    var maxHeight = (DimensionData->config->MaxBlockHeight - 1);
+
+    for (var x = 0; x < 16; x++) {
+        for (var z = 0; z < 16; z++) {
+            for (var y = minHeight; y < maxHeight; y++) {
+                bool hide = Solid->at(x, y, z) & SL_OBFS;
+                for (auto& [dx, dy, dz] : checkOffset) {
+                    hide = hide && (Solid->at(x + dx, y + dy, z + dz) & SL_SOLID);
+                    if (!hide) break;
+                }
+                if (hide) Chunk->setBlock(x, y, z, ReplacementBlocks[y < 0]);
+            }
+        }
+    }
+}
+
+// engine-mode: 2 will replace both hidden-blocks and replacement-blocks with randomly generated hidden-blocks
+void Engine::Engine_Mode_2() {
+    var ReplacementBlocks = config.ReplacementBlocks;
+    var HiddenBlockSet    = config.HiddenBlocks + config.ReplacementBlocks;                      // SL_OBFS | SL_SOLID
+    var SolidBlocks       = config.SolidBlocks + config.HiddenBlocks + config.ReplacementBlocks; // SL_SOLID
+
+    var minHeight = (Chunk->getHeightRange().first << 4) + 1;
+    var maxHeight = (DimensionData->config->MaxBlockHeight - 1);
+
+    for (var x = 0; x < 16; x++) {
+        for (var z = 0; z < 16; z++) {
+            for (var y = minHeight; y < maxHeight; y++) {
+                bool hide = Solid->at(x, y, z) & SL_OBFS;
+                for (auto& [dx, dy, dz] : checkOffset) {
+                    hide = hide && (Solid->at(x + dx, y + dy, z + dz) & SL_SOLID);
+                    if (!hide) break;
+                }
+                var randomBlock = ReplacementBlocks[rand()];
+                if (hide) Chunk->setBlock(x, y, z, randomBlock);
+            }
+        }
+    }
+}
+
+// engine-mode: 3 works similarly to engine-mode: 2, but instead of randomizing every block, it randomizes the block for
+// each layer of a chunk.
+void Engine::Engine_Mode_3() {
+    var ReplacementBlocks = config.ReplacementBlocks;
+    var HiddenBlockSet    = config.HiddenBlocks + config.ReplacementBlocks;                      // SL_OBFS | SL_SOLID
+    var SolidBlocks       = config.SolidBlocks + config.HiddenBlocks + config.ReplacementBlocks; // SL_SOLID
+
+    var minHeight = (Chunk->getHeightRange().first << 4) + 1;
+    var maxHeight = (DimensionData->config->MaxBlockHeight - 1);
+
+    for (var y = minHeight; y < maxHeight; y++) {
+        var randomBlock = ReplacementBlocks[rand()];
+        for (var x = 0; x < 16; x++) {
+            for (var z = 0; z < 16; z++) {
+                bool hide = Solid->at(x, y, z) & SL_OBFS;
+                for (auto& [dx, dy, dz] : checkOffset) {
+                    hide = hide && (Solid->at(x + dx, y + dy, z + dz) & SL_SOLID);
+                    if (!hide) break;
+                }
+                if (hide) Chunk->setBlock(x, y, z, randomBlock);
+            }
+        }
+    }
+}
+
+```
 </details>

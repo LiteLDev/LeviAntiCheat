@@ -11,6 +11,58 @@ Powerful anti-cheating for LeviLamina
 lip install github.com/LiteLDev/LeviAntiCheat
 ```
 
+## Features
+
+### Bugfixes
+
+- Fix UI item duplication
+- Fix sleep teleport
+- Fix gateway copy
+
+### Client Cheating
+
+- Prevent X-ray vision of minerals
+- Prevent Toolbox using
+- Prevent auto click
+- Prevent Reach
+- Prevent fake name
+- Prevent spawn xp orbs
+- Prevent `xp` hack
+
+### Inventory
+
+- Check anvil enchantment
+- Prevent automatic tool selection
+- Prevent invalid items
+- Prevent invalid nbt items
+- Ban illegal items
+- Check enchantment level
+- Prevent invalid stack
+- Prevent some resource packs cheating
+
+### Movement
+
+- Prevent interacting with containers while moving
+- Prevent illegal movement such as fly, speed hack, wall hack
+- Prevent NoPacket
+- Prevent Timer(another type of speed hack by adjust client's speed)
+
+### Interaction
+
+- Prevent illegal trades
+- Prevent long item nametag
+- Prevent spam(including selector spam, command spam etc.)
+
+### Secure
+
+- Prevent LoginFlood attack
+
+### World
+
+- Fake seed
+- Prevent illegal breaking
+- Patch player's inventory when online mode is off
+
 ## Usage
 
 ### Commands
@@ -24,7 +76,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
-    "version": 2,
+    "version": 4,
     "consoleLog": true,
     "worldSafety": {
         "fakeSeed": {
@@ -46,16 +98,16 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "MaxBlockHeight": 64,
                     "HiddenBlocks": [
                         "minecraft:copper_ore",
-                        "minecraft:deepslate_copper_ore",
                         "minecraft:raw_copper_block",
                         "minecraft:deepslate_coal_ore",
+                        "minecraft:deepslate_copper_ore",
                         "minecraft:diamond_ore",
                         "minecraft:deepslate_diamond_ore",
                         "minecraft:gold_ore",
                         "minecraft:iron_ore",
                         "minecraft:deepslate_gold_ore",
-                        "minecraft:deepslate_iron_ore",
                         "minecraft:raw_iron_block",
+                        "minecraft:deepslate_iron_ore",
                         "minecraft:lapis_ore",
                         "minecraft:deepslate_lapis_ore",
                         "minecraft:redstone_ore",
@@ -63,54 +115,30 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:coal_ore"
                     ],
                     "ReplacementBlocks": [
-                        "minecraft:amethyst_block",
-                        "minecraft:andesite",
-                        "minecraft:deepslate",
-                        "minecraft:calcite",
+                        "minecraft:raw_iron_block",
+                        "minecraft:emerald_ore",
+                        "minecraft:diamond_ore",
                         "minecraft:deepslate_emerald_ore",
-                        "minecraft:oak_planks",
-                        "minecraft:tuff",
-                        "minecraft:budding_amethyst",
-                        "minecraft:gravel",
+                        "minecraft:deepslate_diamond_ore",
                         "minecraft:coal_ore",
                         "minecraft:deepslate_coal_ore",
+                        "minecraft:iron_ore",
+                        "minecraft:deepslate_iron_ore",
+                        "minecraft:calcite",
+                        "minecraft:oak_planks",
+                        "minecraft:tuff",
+                        "minecraft:amethyst_block",
+                        "minecraft:andesite",
+                        "minecraft:budding_amethyst",
+                        "minecraft:gravel",
+                        "minecraft:deepslate",
                         "minecraft:diorite",
                         "minecraft:smooth_basalt",
                         "minecraft:dirt",
                         "minecraft:stone",
-                        "minecraft:emerald_ore",
                         "minecraft:granite"
-                    ]
-                },
-                "overworld(engine mode 1 example)": {
-                    "Enable": true,
-                    "EngineMode": 1,
-                    "UpdateRadius": 1.0,
-                    "MaxBlockHeight": 64,
-                    "HiddenBlocks": [
-                        "minecraft:coal_ore",
-                        "minecraft:raw_copper_block",
-                        "minecraft:deepslate_coal_ore",
-                        "minecraft:copper_ore",
-                        "minecraft:deepslate_copper_ore",
-                        "minecraft:emerald_ore",
-                        "minecraft:raw_iron_block",
-                        "minecraft:diamond_ore",
-                        "minecraft:deepslate_diamond_ore",
-                        "minecraft:deepslate_emerald_ore",
-                        "minecraft:redstone_ore",
-                        "minecraft:gold_ore",
-                        "minecraft:deepslate_gold_ore",
-                        "minecraft:iron_ore",
-                        "minecraft:deepslate_iron_ore",
-                        "minecraft:lapis_ore",
-                        "minecraft:deepslate_lapis_ore",
-                        "minecraft:deepslate_redstone_ore"
                     ],
-                    "ReplacementBlocks": [
-                        "minecraft:stone",
-                        "minecraft:deepslate"
-                    ]
+                    "SolidBlocks": []
                 },
                 "nether": {
                     "Enable": true,
@@ -124,6 +152,15 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     ],
                     "ReplacementBlocks": [
                         "minecraft:netherrack"
+                    ],
+                    "SolidBlocks": [
+                        "minecraft:netherrack",
+                        "minecraft:magma",
+                        "minecraft:blackstone",
+                        "minecraft:basalt",
+                        "minecraft:crimson_nylium",
+                        "minecraft:warped_nylium",
+                        "minecraft:gravel"
                     ]
                 },
                 "the end": {
@@ -132,7 +169,8 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "UpdateRadius": 2.0,
                     "MaxBlockHeight": 0,
                     "HiddenBlocks": [],
-                    "ReplacementBlocks": []
+                    "ReplacementBlocks": [],
+                    "SolidBlocks": []
                 },
                 "nether(engine mode 2 or 3 example)": {
                     "Enable": true,
@@ -156,19 +194,22 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:soul_soil",
                         "minecraft:netherrack",
                         "minecraft:soul_sand"
-                    ]
+                    ],
+                    "SolidBlocks": []
                 }
             }
         },
         "antiToolbox": true,
         "antiFakeName": true,
         "antiSpawnXpOrbs": true,
-        "antiXpHack": true
+        "antiXpHack": true,
+        "antiBadPacket": true
     },
     "bugFixes": {
         "uiItemDuplicateFix": true,
         "sleepTeleportFix": true,
-        "gatewayCopyFix": true
+        "gatewayCopyFix": true,
+        "decoratedPotLootTableFix": true
     },
     "inventoryManagement": {
         "antiAutoOffhand": true,
@@ -206,7 +247,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
             "enable": true,
             "maxMismatchDistance": 1.0,
             "triggerReplayDistance": 2.0,
-            "detectLevel": 5
+            "detectLevel": 2
         },
         "timerCheck": {
             "enable": true,
@@ -234,65 +275,13 @@ For X-Ray prevention, see [here](anti_x_ray.md).
     },
     "punish": {
         "enable": true,
+        "enableBanWave": true,
         "kickVL": 100,
         "banVL": -1,
         "banDuration": 0
     }
 }
 ```
-
-## Features
-
-### Bugfixes
-
-- Fix UI item duplication
-- Fix sleep teleport
-- Fix gateway copy
-
-### Client Cheating
-
-- Prevent X-ray vision of minerals
-- Prevent Toolbox using
-- Prevent auto click
-- Prevent Reach
-- Prevent fake name
-- Prevent spawn xp orbs
-- Prevent `xp` hack
-- 
-
-### Inventory
-
-- Check anvil enchantment
-- Prevent automatic tool selection
-- Prevent invalid items
-- Prevent invalid nbt items
-- Ban illegal items
-- Check enchantment level
-- Prevent invalid stack
-- Prevent some resource packs cheating
-
-### Movement
-
-- Prevent interacting with containers while moving
-- Prevent illegal movement such as fly, speed hack, wall hack
-- Prevent NoPacket
-- Prevent Timer(another type of speed hack by adjust client's speed)
-
-### Interaction
-
-- Prevent illegal trades
-- Prevent long item nametag
-- Prevent spam(including selector spam, command spam etc.)
-
-### Secure
-
-- Prevent LoginFlood attack
-
-### World
-
-- Fake seed
-- Prevent illegal breaking
-- Patch player's inventory when online mode is off
 
 ## Development
 
@@ -302,7 +291,7 @@ You can develop your own punishment system based on [LeviPenalizeCheat](https://
 
 Ask questions by creating an issue.
 
-Since this project is closed source, you can't contribute to the code directly.
+Since this project is closed source, you can't contribute to the code directly. But if you have great ideas or suggestions, please feel free to contact us.
 
 ## License
 
@@ -312,4 +301,4 @@ Without the prior written consent of LiteLDev, users shall not perform the follo
 
 1. Decompile, disassemble and modify all or part of LeviAnticheat in any way, or reverse engineer any function or program of LeviAntiCheat.
 
-1. Rent and sell LeviAntiCheat.
+2. Rent and sell LeviAntiCheat.
