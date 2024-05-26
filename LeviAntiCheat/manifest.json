@@ -1,8 +1,8 @@
 {
-    "name": "LeviAntiCheat",
-    "entry": "LeviAntiCheat.dll",
+    "name": "${pluginName}",
+    "entry": "${pluginFile}",
     "type": "native",
     "description": "Lightweight anti-cheating for LeviLamina",
     "author": "LiteLDev",
-    "version": "0.2.6"
+    "version": "0.2.7"
 }

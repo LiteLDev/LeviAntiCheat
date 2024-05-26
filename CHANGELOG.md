@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.7] - 2024-05-26
+
+### Added
+
+- Allow user specified solid blocks
+
+### Fixed
+
+- Handle exception in checkItemNbt
+
 ## [0.2.6] - 2024-05-24
 
 ### Fixed
@@ -103,6 +113,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#9]: https://github.com/LiteLDev/LeviAntiCheat/issues/9
 
+[0.2.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.6...v0.2.7
 [0.2.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.5...v0.2.6
 [0.2.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.3...v0.2.4
