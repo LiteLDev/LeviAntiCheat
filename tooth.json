@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "tooth": "github.com/LiteLDev/LeviAntiCheat",
-    "version": "0.2.8",
+    "version": "0.3.0",
     "info": {
         "name": "LeviAntiCheat",
         "description": "Powerful anti-cheating for LeviLamina",
@@ -12,7 +12,7 @@
         ]
     },
     "prerequisites": {
-        "github.com/LiteLDev/LeviLamina": "0.12.x"
+        "github.com/LiteLDev/LeviLamina": "0.13.x"
     },
     "files": {
         "place": [
