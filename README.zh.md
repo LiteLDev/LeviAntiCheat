@@ -63,6 +63,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 ### 安全
 
 - 防止Login泛洪攻击
+- 修复空包刷屏
 
 ### 世界
 
