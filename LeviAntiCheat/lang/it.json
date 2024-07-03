@@ -4,7 +4,6 @@
   "LeviAntiCheat's main command": "Comando principale di LeviAntiCheat",
   "Player not found": "Giocatore non trovato",
   "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensione (nome:{}, id:{}) non trovata in AntiXray config",
-  "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "modalità motore non identificata: {} antixray non funzionerà, controlla https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md per maggiori dettagli",
   "antixray engine mode required at least one replacement block": "la modalità motore antixray richiede almeno un blocco di ricambio",
   "LoginFlood from {0} detected, the address has been added to black list": "Rilevato LoginFlood da {0} , l'indirizzo è stato aggiunto alla lista nera",
   "{0} has been banned by BanWave": "{0} è stato bandito da BanWave",
@@ -15,5 +14,10 @@
   "{0} has been kicked for {1}": "{0} è stato cacciato per {1}",
   "{0} has been banned for {1}": "{0} è stato bandito per {1}",
   "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" è stato rilevato utilizzando: {1}, {2}",
-  "\"{0}\" has been detected using: {1}": "\"{0}\" è stato rilevato utilizzando: {1}"
+  "\"{0}\" has been detected using: {1}": "\"{0}\" è stato rilevato utilizzando: {1}",
+  "unidentified engine mode: {} antixray won't work, check https://github": {
+    "com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray": {
+      "md for more detail": "modalità motore non identificata: {} antixray non funzionerà, controlla https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md per maggiori dettagli"
+    }
+  }
 }
