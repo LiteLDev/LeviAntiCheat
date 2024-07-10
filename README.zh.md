@@ -73,7 +73,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ### 配置文件
 
-有关AntiXray子模块的详细说明，请参照[此文档](anti_x_ray.md).
+有关AntiXray子模块的详细说明，请参照[此文档](anti_x_ray.zh.md).
 
 ```jsonc
 {
