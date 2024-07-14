@@ -17,6 +17,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 `/lac ban <玩家> [原因] [时长(分钟)]` 手动封禁玩家  
 `/lac unban <玩家>` 手动解封玩家
+`/lac reload` 重载配置文件
 
 ## 特性
 
