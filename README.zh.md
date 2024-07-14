@@ -77,27 +77,27 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ```jsonc
 {
-    "version": 4,
-    "consoleLog": true,
-    "worldSafety": {
-        "fakeSeed": {
-            "enable": true,
-            "randomSeed": false,
-            "seed": 0
+    "version": 4, // 配置文件版本
+    "consoleLog": true, // 是否在控制台记录日志
+    "worldSafety": { // 世界安全配置
+        "fakeSeed": { // 假种子配置
+            "enable": true, // 是否启用假种子
+            "randomSeed": false, // 是否启用随机种子
+            "seed": 0 // 种子值
         },
-        "offlineInventoryProtection": false,
-        "illegalBreakingCheck": true
+        "offlineInventoryProtection": false, // 离线存储保护
+        "illegalBreakingCheck": true // 非法破坏检测
     },
-    "cheatPrevention": {
-        "antiXray": {
-            "enable": true,
-            "DimensionConfigs": {
-                "overworld": {
-                    "Enable": true,
-                    "EngineMode": 2,
-                    "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 64,
-                    "HiddenBlocks": [
+    "cheatPrevention": { // 作弊预防配置
+        "antiXray": { // 反透视配置
+            "enable": true, // 是否启用反透视
+            "DimensionConfigs": { // 维度配置
+                "overworld": { // 主世界配置
+                    "Enable": true, // 是否启用反透视
+                    "EngineMode": 2, // 引擎模式
+                    "UpdateRadius": 2.0, // 更新半径
+                    "MaxBlockHeight": 64, // 最大方块高度
+                    "HiddenBlocks": [ // 隐藏的方块
                         "minecraft:copper_ore",
                         "minecraft:raw_copper_block",
                         "minecraft:deepslate_coal_ore",
@@ -115,7 +115,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:deepslate_redstone_ore",
                         "minecraft:coal_ore"
                     ],
-                    "ReplacementBlocks": [
+                    "ReplacementBlocks": [ // 替换的方块
                         "minecraft:raw_iron_block",
                         "minecraft:emerald_ore",
                         "minecraft:diamond_ore",
@@ -139,22 +139,22 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:stone",
                         "minecraft:granite"
                     ],
-                    "SolidBlocks": []
+                    "SolidBlocks": [] // 实心方块
                 },
-                "nether": {
-                    "Enable": true,
-                    "EngineMode": 1,
-                    "UpdateRadius": 1.0,
-                    "MaxBlockHeight": 128,
-                    "HiddenBlocks": [
+                "nether": { // 下界配置
+                    "Enable": true, // 是否启用反透视
+                    "EngineMode": 1, // 引擎模式
+                    "UpdateRadius": 1.0, // 更新半径
+                    "MaxBlockHeight": 128, // 最大方块高度
+                    "HiddenBlocks": [ // 隐藏的方块
                         "minecraft:ancient_debris",
                         "minecraft:nether_gold_ore",
                         "minecraft:quartz_ore"
                     ],
-                    "ReplacementBlocks": [
+                    "ReplacementBlocks": [ // 替换的方块
                         "minecraft:netherrack"
                     ],
-                    "SolidBlocks": [
+                    "SolidBlocks": [ // 实心方块
                         "minecraft:netherrack",
                         "minecraft:magma",
                         "minecraft:blackstone",
@@ -164,21 +164,21 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:gravel"
                     ]
                 },
-                "the end": {
-                    "Enable": false,
-                    "EngineMode": 1,
-                    "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 0,
-                    "HiddenBlocks": [],
-                    "ReplacementBlocks": [],
-                    "SolidBlocks": []
+                "the end": { // 末地配置
+                    "Enable": false, // 是否启用反透视
+                    "EngineMode": 1, // 引擎模式
+                    "UpdateRadius": 2.0, // 更新半径
+                    "MaxBlockHeight": 0, // 最大方块高度
+                    "HiddenBlocks": [], // 隐藏的方块
+                    "ReplacementBlocks": [], // 替换的方块
+                    "SolidBlocks": [] // 实心方块
                 },
-                "nether(engine mode 2 or 3 example)": {
-                    "Enable": true,
-                    "EngineMode": 3,
-                    "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 128,
-                    "HiddenBlocks": [
+                "nether(engine mode 2 or 3 example)": { // 下界（引擎模式2或3示例）
+                    "Enable": true, // 是否启用反透视
+                    "EngineMode": 3, // 引擎模式
+                    "UpdateRadius": 2.0, // 更新半径
+                    "MaxBlockHeight": 128, // 最大方块高度
+                    "HiddenBlocks": [ // 隐藏的方块
                         "minecraft:ancient_debris",
                         "minecraft:glowstone",
                         "minecraft:bone_block",
@@ -188,7 +188,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:nether_gold_ore",
                         "minecraft:polished_blackstone_bricks"
                     ],
-                    "ReplacementBlocks": [
+                    "ReplacementBlocks": [ // 替换的方块
                         "minecraft:basalt",
                         "minecraft:blackstone",
                         "minecraft:gravel",
@@ -196,92 +196,93 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:netherrack",
                         "minecraft:soul_sand"
                     ],
-                    "SolidBlocks": []
+                    "SolidBlocks": [] // 实心方块
                 }
             }
         },
-        "antiToolbox": true,
-        "antiFakeName": true,
-        "antiSpawnXpOrbs": true,
-        "antiXpHack": true,
-        "antiBadPacket": true
+        "antiToolbox": true, // 是否启用反Toolbox
+        "antiFakeName": true, // 是否启用反假名
+        "antiSpawnXpOrbs": true, // 是否启用反生成经验球
+        "antiXpHack": true, // 是否启用反经验值作弊
+        "antiBadPacket": true // 是否启用反坏数据包
     },
-    "bugFixes": {
-        "uiItemDuplicateFix": true,
-        "sleepTeleportFix": true,
-        "gatewayCopyFix": true,
-        "decoratedPotLootTableFix": true
+    "bugFixes": { // Bug 修复配置
+        "uiItemDuplicateFix": true, // UI物品复制修复
+        "sleepTeleportFix": true, // 睡眠传送修复
+        "gatewayCopyFix": true, // 折跃门复制修复
+        "decoratedPotLootTableFix": true // 装饰罐战利品表修复
     },
-    "inventoryManagement": {
-        "antiAutoOffhand": true,
-        "rectifyUiItemDrop": true,
-        "invalidItemDetection": true,
-        "anvilEnchantLimits": true,
-        "invalidStackDetection": true,
-        "antiInvalidNbtItem": true,
-        "banItem": {
-            "enable": true,
-            "blacklist": []
+    "inventoryManagement": { // 物品管理配置
+        "antiAutoOffhand": true, // 是否启用反自动副手
+        "rectifyUiItemDrop": true, // 是否纠正界面物品掉落
+        "invalidItemDetection": true, // 无效物品检测
+        "anvilEnchantLimits": true, // 铁砧附魔限制
+        "invalidStackDetection": true, // 无效堆叠检测
+        "antiInvalidNbtItem": true, // 反无效NBT物品
+        "banItem": { // 禁用物品配置
+            "enable": true, // 是否启用禁用物品
+            "blacklist": [] // 黑名单物品
         },
-        "enchantCheck": {
-            "enable": false,
-            "maxEnchantLevel": {
-                "example_enchant": 5
+        "enchantCheck": { // 附魔检查
+            "enable": false, // 是否启用附魔检查
+            "maxEnchantLevel": { // 最大附魔等级
+                "example_enchant": 5 // 示例附魔
             }
         }
     },
-    "playerInteractions": {
-        "illegallyTradeRestrictions": true,
-        "antiSpam": {
-            "enable": true,
-            "maxChatLength": 300,
-            "maxRate": 5,
-            "disableSelector": true
+    "playerInteractions": { // 玩家交互配置
+        "illegallyTradeRestrictions": true, // 非法交易限制
+        "antiSpam": { // 反垃圾信息
+            "enable": true, // 是否启用反垃圾信息
+            "maxChatLength": 300, // 最大聊天长度
+            "maxRate": 5, // 最大发送速率
+            "disableSelector": true // 禁用选择器
         },
-        "itemNameLengthCheck": {
-            "enable": true,
-            "maxStringLength": 90
+        "itemNameLengthCheck": { // 物品名称长度检查
+            "enable": true, // 是否启用物品名称长度检查
+            "maxStringLength": 90 // 最大字符串长度
         }
     },
-    "movement": {
-        "illegalMovementCheck": {
-            "enable": true,
-            "maxMismatchDistance": 1.0,
-            "triggerReplayDistance": 2.0,
-            "detectLevel": 2
+    "movement": { // 移动检测
+        "illegalMovementCheck": { // 非法移动检测
+            "enable": true, // 是否启用非法移动检测
+            "maxMismatchDistance": 1.0, // 最大不匹配距离
+            "triggerReplayDistance": 2.0, // 触发回放距离
+            "detectLevel": 2 // 检测级别
         },
-        "timerCheck": {
-            "enable": true,
-            "maxPacketSpeed": 24,
-            "detectLevel": 15
+        "timerCheck": { // 变速齿轮检测
+            "enable": true, // 是否启用变速齿轮检测
+            "maxPacketSpeed": 24, // 最大数据包速度
+            "detectLevel": 15 // 检测级别
         },
-        "noPacketCheck": {
-            "enable": true,
-            "maxNoPacketTime": 5
+        "noPacketCheck": { // 无数据包检测
+            "enable": true, // 是否启用无数据包检测
+            "maxNoPacketTime": 5 // 最大无数据包时间
         }
     },
-    "combat": {
-        "autoClickCheck": {
-            "enable": true,
-            "maxCps": 10,
-            "detectLevel": 10
+    "combat": { // 战斗检测
+        "autoClickCheck": { // 自动点击检测
+            "enable": true, // 是否启用自动点击检测
+            "maxCps": 10, // 最大每秒点击次数
+            "detectLevel": 10 // 检测级别
         },
-        "reachDistanceCheck": {
-            "enable": true,
-            "detectLevel": 5
+        "reachDistanceCheck": { // 攻击距离检测
+            "enable": true, // 是否启用攻击距离检测
+            "detectLevel": 5 // 检测级别
         }
     },
-    "securityMeasures": {
-        "antiLoginFloodCheck": false
+    "securityMeasures": { // 安全措施
+        "antiLoginFloodCheck": false // 登录洪流检测
     },
-    "punish": {
-        "enable": true,
-        "enableBanWave": true,
-        "kickVL": 100,
-        "banVL": -1,
-        "banDuration": 0
+    "punish": { // 惩罚配置
+        "enable": true, // 是否启用惩罚
+        "enableBanWave": true, // 是否启用封波系统
+        "kickVL": 100, // 踢出违反值
+        "banVL": -1, // 封禁违反值
+        "banDuration": 0 // 封禁时长
     }
 }
+
 ```
 
 ## 拓展
