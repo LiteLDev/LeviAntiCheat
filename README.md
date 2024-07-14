@@ -78,7 +78,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
-    "version": 4,
+    "version": 5,
     "consoleLog": true,
     "worldSafety": {
         "fakeSeed": {
@@ -121,14 +121,14 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:emerald_ore",
                         "minecraft:diamond_ore",
                         "minecraft:deepslate_emerald_ore",
+                        "minecraft:calcite",
+                        "minecraft:oak_planks",
+                        "minecraft:tuff",
                         "minecraft:deepslate_diamond_ore",
                         "minecraft:coal_ore",
                         "minecraft:deepslate_coal_ore",
                         "minecraft:iron_ore",
                         "minecraft:deepslate_iron_ore",
-                        "minecraft:calcite",
-                        "minecraft:oak_planks",
-                        "minecraft:tuff",
                         "minecraft:amethyst_block",
                         "minecraft:andesite",
                         "minecraft:budding_amethyst",
@@ -173,36 +173,11 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "HiddenBlocks": [],
                     "ReplacementBlocks": [],
                     "SolidBlocks": []
-                },
-                "nether(engine mode 2 or 3 example)": {
-                    "Enable": true,
-                    "EngineMode": 3,
-                    "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 128,
-                    "HiddenBlocks": [
-                        "minecraft:ancient_debris",
-                        "minecraft:glowstone",
-                        "minecraft:bone_block",
-                        "minecraft:quartz_ore",
-                        "minecraft:magma_block",
-                        "minecraft:nether_bricks",
-                        "minecraft:nether_gold_ore",
-                        "minecraft:polished_blackstone_bricks"
-                    ],
-                    "ReplacementBlocks": [
-                        "minecraft:basalt",
-                        "minecraft:blackstone",
-                        "minecraft:gravel",
-                        "minecraft:soul_soil",
-                        "minecraft:netherrack",
-                        "minecraft:soul_sand"
-                    ],
-                    "SolidBlocks": []
                 }
             }
         },
         "antiToolbox": true,
-        "antiFakeName": true,
+        "antiFakeName": false,
         "antiSpawnXpOrbs": true,
         "antiXpHack": true,
         "antiBadPacket": true
@@ -210,8 +185,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
     "bugFixes": {
         "uiItemDuplicateFix": true,
         "sleepTeleportFix": true,
-        "gatewayCopyFix": true,
-        "decoratedPotLootTableFix": true
+        "gatewayCopyFix": true
     },
     "inventoryManagement": {
         "antiAutoOffhand": true,
@@ -247,9 +221,9 @@ For X-Ray prevention, see [here](anti_x_ray.md).
     "movement": {
         "illegalMovementCheck": {
             "enable": true,
-            "maxMismatchDistance": 1.0,
-            "triggerReplayDistance": 2.0,
-            "detectLevel": 2
+            "maxMismatchDistance": 2.0,
+            "triggerReplayDistance": 3.0,
+            "detectLevel": 3
         },
         "timerCheck": {
             "enable": true,
@@ -258,7 +232,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         },
         "noPacketCheck": {
             "enable": true,
-            "maxNoPacketTime": 5
+            "maxNoPacketTime": 10
         }
     },
     "combat": {
@@ -273,6 +247,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         }
     },
     "securityMeasures": {
+        "emptyPacketFix": true,
         "antiLoginFloodCheck": false
     },
     "punish": {

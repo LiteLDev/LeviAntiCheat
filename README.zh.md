@@ -78,7 +78,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ```jsonc
 {
-    "version": 4, // 配置文件版本
+    "version": 5, // 配置文件版本
     "consoleLog": true, // 是否在控制台记录日志
     "worldSafety": { // 世界安全配置
         "fakeSeed": { // 假种子配置
@@ -86,7 +86,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
             "randomSeed": false, // 是否启用随机种子
             "seed": 0 // 种子值
         },
-        "offlineInventoryProtection": false, // 离线存储保护
+        "offlineInventoryProtection": false, // 离线模式背包保护
         "illegalBreakingCheck": true // 非法破坏检测
     },
     "cheatPrevention": { // 作弊预防配置
@@ -202,7 +202,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
             }
         },
         "antiToolbox": true, // 是否启用反Toolbox
-        "antiFakeName": true, // 是否启用反假名
+        "antiFakeName": false, // 是否启用反假名
         "antiSpawnXpOrbs": true, // 是否启用反生成经验球
         "antiXpHack": true, // 是否启用反经验值作弊
         "antiBadPacket": true // 是否启用反坏数据包
@@ -210,8 +210,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
     "bugFixes": { // Bug 修复配置
         "uiItemDuplicateFix": true, // UI物品复制修复
         "sleepTeleportFix": true, // 睡眠传送修复
-        "gatewayCopyFix": true, // 折跃门复制修复
-        "decoratedPotLootTableFix": true // 装饰罐战利品表修复
+        "gatewayCopyFix": true // 折跃门复制修复
     },
     "inventoryManagement": { // 物品管理配置
         "antiAutoOffhand": true, // 是否启用反自动副手
@@ -247,8 +246,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
     "movement": { // 移动检测
         "illegalMovementCheck": { // 非法移动检测
             "enable": true, // 是否启用非法移动检测
-            "maxMismatchDistance": 1.0, // 最大不匹配距离
-            "triggerReplayDistance": 2.0, // 触发回放距离
+            "maxMismatchDistance": 2.0, // 最大不匹配距离
+            "triggerReplayDistance": 3.0, // 触发回放距离
             "detectLevel": 2 // 检测级别
         },
         "timerCheck": { // 变速齿轮检测
@@ -258,7 +257,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         },
         "noPacketCheck": { // 无数据包检测
             "enable": true, // 是否启用无数据包检测
-            "maxNoPacketTime": 5 // 最大无数据包时间
+            "maxNoPacketTime": 10 // 最大无数据包时间
         }
     },
     "combat": { // 战斗检测
@@ -273,6 +272,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         }
     },
     "securityMeasures": { // 安全措施
+        "emptyPacketFix": true, // 空包刷屏修复
         "antiLoginFloodCheck": false // 登录洪流检测
     },
     "punish": { // 惩罚配置
