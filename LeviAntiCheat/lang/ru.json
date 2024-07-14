@@ -1,23 +1,26 @@
 {
-  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Вы были забанены. Причина: {0} Время: {1} Срок истечения: {2}",
-  "You have been banned.": "Вы были забанены.",
-  "LeviAntiCheat's main command": "Главная команда LeviAntiCheat's",
-  "Player not found": "Игрок не найден",
-  "Dimension (name:{}, id:{}) not found in AntiXray config": "Измерение (name:{}, id:{}) не найдено в конфигурации AntiXray",
-  "antixray engine mode required at least one replacement block": "режим движка AntiXray требует по крайней мере один заменяемый блок",
-  "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood от {0} обнаружен, адрес был добавлен в черный список",
-  "{0} has been banned by BanWave": "{0} был забанен BanWave",
-  "{0} has been kicked by BanWave": "{0} был кикнут BanWave",
-  "You have been kicked. Don't use cheats! Time: {0}": "Вы были кикнуты. Не используйте читы! Время: {0}",
-  "Warning: don't use cheats!": "Внимание: не используйте читы!",
-  "{0} has been muted for {1}": "{0} был заглушен за {1}",
-  "{0} has been kicked for {1}": "{0} был кикнут за {1}",
-  "{0} has been banned for {1}": "{0} был забанен на {1}",
-  "\"{0}\" has been detected using: {1}, {2}": "Игрок \"{0}\" замечен в использовании: {1}, {2}",
-  "\"{0}\" has been detected using: {1}": "Игрок \"{0}\" замечен в использовании: {1}",
-  "unidentified engine mode: {} antixray won't work, check https://github": {
-    "com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray": {
-      "md for more detail": "неопознанный режим движка: {} antixray не работает, проверьте https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md для получения более подробной информации"
-    }
-  }
+    "LeviAntiCheat's main command": "Главная команда LeviAntiCheat",
+    "Reloaded configuration file successfully": "Файл конфигурации успешно перезагружен",
+    "Failed to reload configuration file": "Не удалось перезагрузить файл конфигурации",
+    "Failed to ban {0}": "Не удалось забанить {0}",
+    "Player not found": "Игрок не найден",
+    "Player {0} has been banned for {1} minutes, reason: {2}": "Игрок {0} забанен на {1} минут, причина: {2}",
+    "Failed to unban {0}, player has not been banned": "Не удалось разбанить {0}, игрок не был забанен",
+    "Failed to unban {0}": "Не удалось разбанить {0}",
+    "Player {0} has been unbanned": "Игрок {0} был разбанен",
+    "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Вы были забанены. Причина: {0} Время: {1} Срок истечения: {2}",
+    "You have been banned.": "Вы были забанены.",
+    "Dimension (name:{}, id:{}) not found in AntiXray config": "Измерение (name:{}, id:{}) не найдено в конфигурации AntiXray",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "неопознанный режим движка: {} antixray не работает, проверьте https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md для получения более подробной информации",
+    "antixray engine required at least one replacement block": "движок антирентгеновских программ требуется хотя бы один блок замены",
+    "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood от {0} обнаружен, адрес был добавлен в черный список",
+    "{0} has been banned by BanWave": "{0} был забанен BanWave",
+    "{0} has been kicked by BanWave": "{0} был кикнут BanWave",
+    "You have been kicked. Don't use cheats! Time: {0}": "Вы были кикнуты. Не используйте читы! Время: {0}",
+    "\"{0}\" has been detected using: {1}, {2}": "Игрок \"{0}\" замечен в использовании: {1}, {2}",
+    "\"{0}\" has been detected using: {1}": "Игрок \"{0}\" замечен в использовании: {1}",
+    "Warning: don't use cheats!": "Внимание: не используйте читы!",
+    "{0} has been muted for {1}": "{0} был заглушен за {1}",
+    "{0} has been kicked for {1}": "{0} был кикнут за {1}",
+    "{0} has been banned for {1}": "{0} был забанен на {1}"
 }

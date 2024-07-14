@@ -1,23 +1,26 @@
 {
-  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Sei stato bandito. Motivo: {0} volta: {1} tempo di perdono: {2}",
-  "You have been banned.": "Sei stato bandito.",
-  "LeviAntiCheat's main command": "Comando principale di LeviAntiCheat",
-  "Player not found": "Giocatore non trovato",
-  "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensione (nome:{}, id:{}) non trovata in AntiXray config",
-  "antixray engine mode required at least one replacement block": "la modalità motore antixray richiede almeno un blocco di ricambio",
-  "LoginFlood from {0} detected, the address has been added to black list": "Rilevato LoginFlood da {0} , l'indirizzo è stato aggiunto alla lista nera",
-  "{0} has been banned by BanWave": "{0} è stato bandito da BanWave",
-  "{0} has been kicked by BanWave": "{0} è stato cacciato da BanWave",
-  "You have been kicked. Don't use cheats! Time: {0}": "Sei stato espulso. Non usare i tradimenti! Ora: {0}",
-  "Warning: don't use cheats!": "Attenzione: non usare i trucchi!",
-  "{0} has been muted for {1}": "{0} è stato silenziato per {1}",
-  "{0} has been kicked for {1}": "{0} è stato cacciato per {1}",
-  "{0} has been banned for {1}": "{0} è stato bandito per {1}",
-  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" è stato rilevato utilizzando: {1}, {2}",
-  "\"{0}\" has been detected using: {1}": "\"{0}\" è stato rilevato utilizzando: {1}",
-  "unidentified engine mode: {} antixray won't work, check https://github": {
-    "com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray": {
-      "md for more detail": "modalità motore non identificata: {} antixray non funzionerà, controlla https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md per maggiori dettagli"
-    }
-  }
+    "LeviAntiCheat's main command": "Comando principale di LeviAntiCheat",
+    "Reloaded configuration file successfully": "File di configurazione ricaricato con successo",
+    "Failed to reload configuration file": "Impossibile ricaricare il file di configurazione",
+    "Failed to ban {0}": "Impossibile bandire {0}",
+    "Player not found": "Giocatore non trovato",
+    "Player {0} has been banned for {1} minutes, reason: {2}": "Il giocatore {0} è stato bandito per {1} minuti, motivo: {2}",
+    "Failed to unban {0}, player has not been banned": "Sblocco di {0}non riuscito, il giocatore non è stato bannato",
+    "Failed to unban {0}": "Sblocco {0} non riuscito",
+    "Player {0} has been unbanned": "Il giocatore {0} è stato sbannato",
+    "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Sei stato bandito. Motivo: {0} volta: {1} tempo di perdono: {2}",
+    "You have been banned.": "Sei stato bandito.",
+    "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensione (nome:{}, id:{}) non trovata in AntiXray config",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "modalità motore non identificata: {} antixray non funzionerà, controlla https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md per maggiori dettagli",
+    "antixray engine required at least one replacement block": "motore antixray richiesto almeno un blocco di ricambio",
+    "LoginFlood from {0} detected, the address has been added to black list": "Rilevato LoginFlood da {0} , l'indirizzo è stato aggiunto alla lista nera",
+    "{0} has been banned by BanWave": "{0} è stato bandito da BanWave",
+    "{0} has been kicked by BanWave": "{0} è stato cacciato da BanWave",
+    "You have been kicked. Don't use cheats! Time: {0}": "Sei stato espulso. Non usare i tradimenti! Ora: {0}",
+    "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" è stato rilevato utilizzando: {1}, {2}",
+    "\"{0}\" has been detected using: {1}": "\"{0}\" è stato rilevato utilizzando: {1}",
+    "Warning: don't use cheats!": "Attenzione: non usare i trucchi!",
+    "{0} has been muted for {1}": "{0} è stato silenziato per {1}",
+    "{0} has been kicked for {1}": "{0} è stato cacciato per {1}",
+    "{0} has been banned for {1}": "{0} è stato bandito per {1}"
 }

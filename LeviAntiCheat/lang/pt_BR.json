@@ -1,23 +1,26 @@
 {
-  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Você foi banido. Motivo: {0} Hora: {1} tempo de perdão: {2}",
-  "You have been banned.": "Você foi banido.",
-  "LeviAntiCheat's main command": "Comando principal do LeviAntiCheat",
-  "Player not found": "Jogador não encontrado",
-  "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensão (nome:{}, id:{}) não foi encontrado na configuração do AntíXray",
-  "antixray engine mode required at least one replacement block": "modo de motor antixray necessário pelo menos um bloco de substituição",
-  "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood de {0} detectado, o endereço foi adicionado à lista negra",
-  "{0} has been banned by BanWave": "{0} foi banido pelo BanWave",
-  "{0} has been kicked by BanWave": "{0} foi expulso pelo BanWave",
-  "You have been kicked. Don't use cheats! Time: {0}": "Você foi expulso. Não use trapaças! Tempo: {0}",
-  "Warning: don't use cheats!": "Aviso: não use trapaças!",
-  "{0} has been muted for {1}": "{0} foi silenciado por {1}",
-  "{0} has been kicked for {1}": "{0} foi expulso por {1}",
-  "{0} has been banned for {1}": "{0} foi banido por {1}",
-  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" foi detectado usando: {1}, {2}",
-  "\"{0}\" has been detected using: {1}": "\"{0}\" foi detectado usando: {1}",
-  "unidentified engine mode: {} antixray won't work, check https://github": {
-    "com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray": {
-      "md for more detail": "Modo do motor não identificado: {} antixray não funcionará, verifique https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md para mais detalhes"
-    }
-  }
+    "LeviAntiCheat's main command": "Comando principal do LeviAntiCheat",
+    "Reloaded configuration file successfully": "Arquivo de configuração recarregado com sucesso",
+    "Failed to reload configuration file": "Falha ao recarregar o arquivo de configuração",
+    "Failed to ban {0}": "Falha ao banir {0}",
+    "Player not found": "Jogador não encontrado",
+    "Player {0} has been banned for {1} minutes, reason: {2}": "O jogador {0} foi banido por {1} minutos, motivo: {2}",
+    "Failed to unban {0}, player has not been banned": "Falha ao desbanir {0}, o jogador não foi banido",
+    "Failed to unban {0}": "Falha ao desbanir {0}",
+    "Player {0} has been unbanned": "O jogador {0} foi desbanido",
+    "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Você foi banido. Motivo: {0} Hora: {1} tempo de perdão: {2}",
+    "You have been banned.": "Você foi banido.",
+    "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensão (nome:{}, id:{}) não foi encontrado na configuração do AntíXray",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Modo do motor não identificado: {} antixray não funcionará, verifique https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md para mais detalhes",
+    "antixray engine required at least one replacement block": "antixray mecanismo necessário pelo menos um bloco de substituição",
+    "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood de {0} detectado, o endereço foi adicionado à lista negra",
+    "{0} has been banned by BanWave": "{0} foi banido pelo BanWave",
+    "{0} has been kicked by BanWave": "{0} foi expulso pelo BanWave",
+    "You have been kicked. Don't use cheats! Time: {0}": "Você foi expulso. Não use trapaças! Tempo: {0}",
+    "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" foi detectado usando: {1}, {2}",
+    "\"{0}\" has been detected using: {1}": "\"{0}\" foi detectado usando: {1}",
+    "Warning: don't use cheats!": "Aviso: não use trapaças!",
+    "{0} has been muted for {1}": "{0} foi silenciado por {1}",
+    "{0} has been kicked for {1}": "{0} foi expulso por {1}",
+    "{0} has been banned for {1}": "{0} foi banido por {1}"
 }

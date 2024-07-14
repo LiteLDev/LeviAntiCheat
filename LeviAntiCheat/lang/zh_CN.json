@@ -1,23 +1,26 @@
 {
-  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "您已被封禁。原因: {0} 时间: {1} 解封时间: {2}",
-  "You have been banned.": "您已被封禁。",
-  "LeviAntiCheat's main command": "LeviAntiCheat的主要命令",
-  "Player not found": "未找到玩家",
-  "Dimension (name:{}, id:{}) not found in AntiXray config": "反矿透配置中找不到维度 (name:{}, id:{})",
-  "antixray engine mode required at least one replacement block": "反矿透引擎模式至少需要一个替换方块",
-  "LoginFlood from {0} detected, the address has been added to black list": "检测到 {0} 的 LoginFlood，地址已被添加到黑名单",
-  "{0} has been banned by BanWave": "{0} 已被BanWave封禁",
-  "{0} has been kicked by BanWave": "{0} 已被BanWave踢出",
-  "You have been kicked. Don't use cheats! Time: {0}": "您已被踢出。不要作弊！时间: {0}",
-  "Warning: don't use cheats!": "警告: 不要作弊！",
-  "{0} has been muted for {1}": "{0} 已 {1} 因为被禁言",
-  "{0} has been kicked for {1}": "{0} 已因为 {1} 被踢出",
-  "{0} has been banned for {1}": "{0} 已因为 {1} 被封禁",
-  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" 已被检测到使用: {1}, {2}",
-  "\"{0}\" has been detected using: {1}": "{0} 已被检测到使用: {1}",
-  "unidentified engine mode: {} antixray won't work, check https://github": {
-    "com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray": {
-      "md for more detail": "未识别的引擎模式: {} 反矿透无法工作，请查看 https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md 获取更多详情"
-    }
-  }
+    "LeviAntiCheat's main command": "LeviAntiCheat的主要命令",
+    "Reloaded configuration file successfully": "重载配置文件成功",
+    "Failed to reload configuration file": "重载配置文件失败",
+    "Failed to ban {0}": "封禁 {0} 失败",
+    "Player not found": "未找到玩家",
+    "Player {0} has been banned for {1} minutes, reason: {2}": "玩家 {0} 已被封禁 {1} 分钟，原因： {2}",
+    "Failed to unban {0}, player has not been banned": "取消封禁 {0} 失败，玩家尚未被封禁",
+    "Failed to unban {0}": "无法解除封锁 {0}",
+    "Player {0} has been unbanned": "玩家 {0} 已被解除禁言",
+    "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "您已被封禁。原因: {0} 时间: {1} 解封时间: {2}",
+    "You have been banned.": "您已被封禁。",
+    "Dimension (name:{}, id:{}) not found in AntiXray config": "反矿透配置中找不到维度 (name:{}, id:{})",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "未识别的引擎模式: {} 反矿透无法工作，请查看 https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.zh.md 获取更多详情",
+    "antixray engine required at least one replacement block": "反矿透引擎至少需要一个替换方块",
+    "LoginFlood from {0} detected, the address has been added to black list": "检测到来自 {0} 的 LoginFlood，地址已被添加到黑名单",
+    "{0} has been banned by BanWave": "{0} 已被BanWave封禁",
+    "{0} has been kicked by BanWave": "{0} 已被BanWave踢出",
+    "You have been kicked. Don't use cheats! Time: {0}": "您已被踢出。不要作弊！时间: {0}",
+    "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" 已被检测到使用: {1}, {2}",
+    "\"{0}\" has been detected using: {1}": "{0} 已被检测到使用: {1}",
+    "Warning: don't use cheats!": "警告: 不要作弊！",
+    "{0} has been muted for {1}": "{0} 已 {1} 因为被禁言",
+    "{0} has been kicked for {1}": "{0} 已因为 {1} 被踢出",
+    "{0} has been banned for {1}": "{0} 已因为 {1} 被封禁"
 }

@@ -1,23 +1,26 @@
 {
-  "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "あなたは禁止されています。理由： {0} 時間： {1} 熟考時間： {2}",
-  "You have been banned.": "あなたは禁止されています。",
-  "LeviAntiCheat's main command": "LeviAntiCheatのメインコマンド",
-  "Player not found": "プレイヤーが見つかりません",
-  "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimension (name:{}, id:{}) が AntiXray 設定に見つかりません",
-  "antixray engine mode required at least one replacement block": "アンチxrayエンジンモードには少なくとも1つの交換ブロックが必要です",
-  "LoginFlood from {0} detected, the address has been added to black list": "{0} からLoginFloodが検出されました。アドレスがブラックリストに追加されました",
-  "{0} has been banned by BanWave": "{0} は BanWave によって禁止されています",
-  "{0} has been kicked by BanWave": "{0} は BanWave によってキックされました",
-  "You have been kicked. Don't use cheats! Time: {0}": "あなたはキックされました。チートを使用しないでください！時間： {0}",
-  "Warning: don't use cheats!": "警告: チートを使用しないでください!",
-  "{0} has been muted for {1}": "{0} は {1} の間ミュートされました",
-  "{0} has been kicked for {1}": "{0} は {1} のためにキックされました",
-  "{0} has been banned for {1}": "{0} は {1} に対してBANされました",
-  "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" が使用して検出されました: {1}, {2}",
-  "\"{0}\" has been detected using: {1}": "\"{0}\" が検出されました: {1}",
-  "unidentified engine mode: {} antixray won't work, check https://github": {
-    "com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray": {
-      "md for more detail": "未確認のエンジンモード: {} antixray が動作しません。詳細については https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md を確認してください。"
-    }
-  }
+    "LeviAntiCheat's main command": "LeviAntiCheatのメインコマンド",
+    "Reloaded configuration file successfully": "設定ファイルを正常に再読み込みしました",
+    "Failed to reload configuration file": "設定ファイルの再読み込みに失敗しました",
+    "Failed to ban {0}": "{0} の禁止に失敗しました",
+    "Player not found": "プレイヤーが見つかりません",
+    "Player {0} has been banned for {1} minutes, reason: {2}": "Player {0} has been banned for {1} minutes, reason: {2}",
+    "Failed to unban {0}, player has not been banned": "{0}のBAN解除に失敗しました。プレイヤーはBANされていません",
+    "Failed to unban {0}": "{0} のBANを解除できませんでした",
+    "Player {0} has been unbanned": "プレイヤー {0} のBANが解除されました",
+    "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "あなたは禁止されています。理由： {0} 時間： {1} 熟考時間： {2}",
+    "You have been banned.": "あなたは禁止されています。",
+    "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimension (name:{}, id:{}) が AntiXray 設定に見つかりません",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "未確認のエンジンモード: {} antixray が動作しません。詳細については https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md を確認してください。",
+    "antixray engine required at least one replacement block": "アンチx線エンジンには少なくとも1つの交換ブロックが必要です",
+    "LoginFlood from {0} detected, the address has been added to black list": "{0} からLoginFloodが検出されました。アドレスがブラックリストに追加されました",
+    "{0} has been banned by BanWave": "{0} は BanWave によって禁止されています",
+    "{0} has been kicked by BanWave": "{0} は BanWave によってキックされました",
+    "You have been kicked. Don't use cheats! Time: {0}": "あなたはキックされました。チートを使用しないでください！時間： {0}",
+    "\"{0}\" has been detected using: {1}, {2}": "\"{0}\" が使用して検出されました: {1}, {2}",
+    "\"{0}\" has been detected using: {1}": "\"{0}\" が検出されました: {1}",
+    "Warning: don't use cheats!": "警告: チートを使用しないでください!",
+    "{0} has been muted for {1}": "{0} は {1} の間ミュートされました",
+    "{0} has been kicked for {1}": "{0} は {1} のためにキックされました",
+    "{0} has been banned for {1}": "{0} は {1} に対してBANされました"
 }
