@@ -255,7 +255,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "enableBanWave": true,
         "kickVL": 100,
         "banVL": -1,
-        "banDuration": 0
+        "banDuration": 0 // In seconds
     }
 }
 ```

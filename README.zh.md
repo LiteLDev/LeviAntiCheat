@@ -280,7 +280,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "enableBanWave": true, // 是否启用封波系统
         "kickVL": 100, // 踢出违反值
         "banVL": -1, // 封禁违反值
-        "banDuration": 0 // 封禁时长
+        "banDuration": 0 // 封禁时长，以秒为单位
     }
 }
 
