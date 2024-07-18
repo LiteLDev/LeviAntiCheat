@@ -42,7 +42,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - 检查铁砧附魔
 - 防止自动选择工具
 - 防止无效物品
-- 防止无效nbt物品
+- 防止无效NBT物品
 - 封禁非法物品
 - 检查附魔等级
 - 防止无效堆叠
@@ -121,14 +121,14 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:emerald_ore",
                         "minecraft:diamond_ore",
                         "minecraft:deepslate_emerald_ore",
+                        "minecraft:calcite",
+                        "minecraft:oak_planks",
+                        "minecraft:tuff",
                         "minecraft:deepslate_diamond_ore",
                         "minecraft:coal_ore",
                         "minecraft:deepslate_coal_ore",
                         "minecraft:iron_ore",
                         "minecraft:deepslate_iron_ore",
-                        "minecraft:calcite",
-                        "minecraft:oak_planks",
-                        "minecraft:tuff",
                         "minecraft:amethyst_block",
                         "minecraft:andesite",
                         "minecraft:budding_amethyst",
@@ -283,7 +283,6 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "banDuration": 0 // 封禁时长，以秒为单位
     }
 }
-
 ```
 
 ## 拓展

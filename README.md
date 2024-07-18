@@ -11,6 +11,14 @@ Powerful anti-cheating for LeviLamina
 lip install github.com/LiteLDev/LeviAntiCheat
 ```
 
+## Usage
+
+### Commands
+
+`/lac ban <Player> [reason] [duration(minute)]` Ban a player manually  
+`/lac unban <Player>` Pardon a player manually  
+`/lac reload` Reload the configuration file
+
 ## Features
 
 ### Bugfixes
@@ -34,7 +42,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Check anvil enchantment
 - Prevent automatic tool selection
 - Prevent invalid items
-- Prevent invalid nbt items
+- Prevent invalid NBT items
 - Ban illegal items
 - Check enchantment level
 - Prevent invalid stack
@@ -63,14 +71,6 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Fake seed
 - Prevent illegal breaking
 - Patch player's inventory when online mode is off
-
-## Usage
-
-### Commands
-
-`/lac ban <Player> [reason] [duration(minute)]` Ban a player manually  
-`/lac unban <Player>` Pardon a player manually  
-`/lac reload` Reload the configuration file
 
 ### Configuration file
 
@@ -172,6 +172,31 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "MaxBlockHeight": 0,
                     "HiddenBlocks": [],
                     "ReplacementBlocks": [],
+                    "SolidBlocks": []
+                },
+                "nether(engine mode 2 or 3 example)": {
+                    "Enable": true,
+                    "EngineMode": 3,
+                    "UpdateRadius": 2.0,
+                    "MaxBlockHeight": 128,
+                    "HiddenBlocks": [
+                        "minecraft:ancient_debris",
+                        "minecraft:glowstone",
+                        "minecraft:bone_block",
+                        "minecraft:quartz_ore",
+                        "minecraft:magma_block",
+                        "minecraft:nether_bricks",
+                        "minecraft:nether_gold_ore",
+                        "minecraft:polished_blackstone_bricks"
+                    ],
+                    "ReplacementBlocks": [
+                        "minecraft:basalt",
+                        "minecraft:blackstone",
+                        "minecraft:gravel",
+                        "minecraft:soul_soil",
+                        "minecraft:netherrack",
+                        "minecraft:soul_sand"
+                    ],
                     "SolidBlocks": []
                 }
             }
