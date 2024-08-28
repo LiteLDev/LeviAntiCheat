@@ -26,8 +26,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - 修复UI物品复制问题
 - 修复床超传问题
 - 折跃门刷掉落方块的问题
-- 修复活塞推动容器时崩溃的问题
-- 修复合成器崩溃的问题
+- 修复打开因活塞而合上的容器时崩溃的问题
+- 修复合成器合成物品时可能崩溃的问题
 
 ### 客户端作弊
 
@@ -36,7 +36,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - 防止连点器
 - 防止长臂猿
 - 防止假名
-- 防止原地生成经验球
+- 防止发包生成经验球
 - 防止刷经验
 
 ### 物品栏

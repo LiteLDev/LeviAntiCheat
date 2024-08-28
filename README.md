@@ -24,9 +24,9 @@ lip install github.com/LiteLDev/LeviAntiCheat
 ### Bugfixes
 
 - Fix UI item duplication
-- Fix sleep teleport
-- Fix gateway copy
-- Fix crash when piston pushing container
+- Fix incorrect teleport when going to bed while changing dimension
+- Fix gateway falling block duplication
+- Fix container crash when opening that was closed by piston
 - Fix crafter crash
 
 ### Client Cheating
@@ -36,7 +36,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Prevent auto click
 - Prevent Reach
 - Prevent fake name
-- Prevent spawn xp orbs
+- Prevent spawn xp orbs packet
 - Prevent `xp` hack
 
 ### Inventory
