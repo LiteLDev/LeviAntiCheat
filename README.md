@@ -26,7 +26,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Fix UI item duplication
 - Fix incorrect teleport when going to bed while changing dimension
 - Fix gateway falling block duplication
-- Fix container crash when opening that was closed by piston
+- Fix container crash when destroying that was closed by block moving
 - Fix crafter crash
 
 ### Client Cheating
