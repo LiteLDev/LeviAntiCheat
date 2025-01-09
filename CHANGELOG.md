@@ -5,6 +5,74 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0-rc.11] - 2025-01-20
+
+### Fixed
+
+- Fix ban command default parameter
+
+## [0.4.0-rc.10] - 2025-01-20
+
+### Fixed
+
+- Fix PlayerCheatEvent & PlayerBanWaveEvent
+
+## [0.4.0-rc.9] - 2025-01-19
+
+### Fixed
+
+- Fix item related punishment
+
+## [0.4.0-rc.8] - 2025-01-18
+
+### Fixed
+
+- Fix enchancement check of leggings
+
+## [0.4.0-rc.7] - 2025-01-16
+
+### Fixed
+
+- Fix enchancement check of some items
+
+## [0.4.0-rc.6] - 2025-01-13
+
+### Fixed
+
+- Fix enchancement check of enchaned book
+
+## [0.4.0-rc.5] - 2025-01-12
+
+### Changed
+
+- Support LeviLamina 1.0.0-rc.3
+
+## [0.4.0-rc.4] - 2025-01-10
+
+### Fixed
+
+- Fix antixray chunk block entity
+- Fix IllegallyTradeRestrictions [#24]
+
+## [0.4.0-rc.3] - 2025-01-09
+
+### Changed
+
+- Remove illegalMovementCheck->triggerReplayDistance
+
+## [0.4.0-rc.2] - 2025-01-09
+
+### Fixed
+
+- Fix CheckItemNbt [#23]
+- Fix AntiXray block update
+
+## [0.4.0-rc.1] - 2025-01-09
+
+### Changed
+
+- Support LeviLamina 1.0.0-rc.2
+
 ## [0.3.7] - 2024-08-27
 
 ### Added
@@ -17,7 +85,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix elytra landing position #12
+- Fix elytra landing position [#12]
 
 ## [0.3.6] - 2024-07-18
 
@@ -177,7 +245,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rewrite IllegalMovementCheck
 
 [#9]: https://github.com/LiteLDev/LeviAntiCheat/issues/9
+[#12]: https://github.com/LiteLDev/LeviAntiCheat/issues/12
+[#23]: https://github.com/LiteLDev/LeviAntiCheat/issues/23
+[#24]: https://github.com/LiteLDev/LeviAntiCheat/issues/24
 
+[0.4.0-rc.11]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.10...v0.4.0-rc.11
+[0.4.0-rc.10]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.9...v0.4.0-rc.10
+[0.4.0-rc.9]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.8...v0.4.0-rc.9
+[0.4.0-rc.8]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.7...v0.4.0-rc.8
+[0.4.0-rc.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.6...v0.4.0-rc.7
+[0.4.0-rc.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.5...v0.4.0-rc.6
+[0.4.0-rc.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.4...v0.4.0-rc.5
+[0.4.0-rc.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.3...v0.4.0-rc.4
+[0.4.0-rc.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.2...v0.4.0-rc.3
+[0.4.0-rc.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.1...v0.4.0-rc.2
+[0.4.0-rc.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.7...v0.4.0-rc.1
 [0.3.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.6...v0.3.7
 [0.3.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.5...v0.3.6
 [0.3.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.4...v0.3.5
