@@ -5,11 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2025-05-21
+
+### Fixed
+
+- Fixed ContainerCrashFix [#35]
+
 ## [0.6.0] - 2025-05-20
 
 ### Changed
 
 - Adapted to LeviLamina 1.2.0-rc.2
+
+## [0.5.2] - 2025-05-21
+
+### Fixed
+
+- Fixed ContainerCrashFix [#35]
 
 ## [0.5.1] - 2025-05-20
 
@@ -315,50 +327,53 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove ContainerMoveCheck
 - Rewrite IllegalMovementCheck
 
-[#9]: https://github.com/LiteLDev/levianticheat-source/issues/9
-[#12]: https://github.com/LiteLDev/levianticheat-source/issues/12
-[#23]: https://github.com/LiteLDev/levianticheat-source/issues/23
-[#24]: https://github.com/LiteLDev/levianticheat-source/issues/24
-[#25]: https://github.com/LiteLDev/levianticheat-source/issues/25
+[#9]: https://github.com/LiteLDev/LeviAntiCheat/issues/9
+[#12]: https://github.com/LiteLDev/LeviAntiCheat/issues/12
+[#23]: https://github.com/LiteLDev/LeviAntiCheat/issues/23
+[#24]: https://github.com/LiteLDev/LeviAntiCheat/issues/24
+[#25]: https://github.com/LiteLDev/LeviAntiCheat/issues/25
+[#35]: https://github.com/LiteLDev/LeviAntiCheat/issues/35
 
-[0.6.0]: https://github.com/LiteLDev/levianticheat-source/compare/v0.5.1...v0.6.0
-[0.5.1]: https://github.com/LiteLDev/levianticheat-source/compare/v0.5.0-rc.1...v0.5.1
-[0.5.0-rc.1]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.5...v0.5.0-rc.1
-[0.4.5]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.4...v0.4.5
-[0.4.4]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.3...v0.4.4
-[0.4.3]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.2...v0.4.3
-[0.4.2]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.1...v0.4.2
-[0.4.1]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0...v0.4.1
-[0.4.0]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.11...v0.4.0
-[0.4.0-rc.11]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.10...v0.4.0-rc.11
-[0.4.0-rc.10]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.9...v0.4.0-rc.10
-[0.4.0-rc.9]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.8...v0.4.0-rc.9
-[0.4.0-rc.8]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.7...v0.4.0-rc.8
-[0.4.0-rc.7]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.6...v0.4.0-rc.7
-[0.4.0-rc.6]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.5...v0.4.0-rc.6
-[0.4.0-rc.5]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.4...v0.4.0-rc.5
-[0.4.0-rc.4]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.3...v0.4.0-rc.4
-[0.4.0-rc.3]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.2...v0.4.0-rc.3
-[0.4.0-rc.2]: https://github.com/LiteLDev/levianticheat-source/compare/v0.4.0-rc.1...v0.4.0-rc.2
-[0.4.0-rc.1]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.7...v0.4.0-rc.1
-[0.3.7]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.6...v0.3.7
-[0.3.6]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.5...v0.3.6
-[0.3.5]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.4...v0.3.5
-[0.3.4]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.3...v0.3.4
-[0.3.3]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.2...v0.3.3
-[0.3.2]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.1...v0.3.2
-[0.3.1]: https://github.com/LiteLDev/levianticheat-source/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.7...v0.3.0
-[0.2.7]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.6...v0.2.7
-[0.2.6]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.5...v0.2.6
-[0.2.5]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.4...v0.2.5
-[0.2.4]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.3...v0.2.4
-[0.2.3]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.2...v0.2.3
-[0.2.2]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.1...v0.2.2
-[0.2.1]: https://github.com/LiteLDev/levianticheat-source/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/LiteLDev/levianticheat-source/compare/v0.1.5...v0.2.0
-[0.1.5]: https://github.com/LiteLDev/levianticheat-source/compare/v0.1.4...v0.1.5
-[0.1.4]: https://github.com/LiteLDev/levianticheat-source/compare/v0.1.3...v0.1.4
-[0.1.3]: https://github.com/LiteLDev/levianticheat-source/compare/v0.1.2...v0.1.3
-[0.1.2]: https://github.com/LiteLDev/levianticheat-source/compare/v0.1.1...v0.1.2
-[0.1.1]: https://github.com/LiteLDev/levianticheat-source/releases/tag/v0.1.1
+[0.6.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.6.0...v0.6.1
+[0.6.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.5.2...v0.6.0
+[0.5.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.5.1...v0.5.2
+[0.5.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.5.0-rc.1...v0.5.1
+[0.5.0-rc.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.5...v0.5.0-rc.1
+[0.4.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.4...v0.4.5
+[0.4.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.3...v0.4.4
+[0.4.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.2...v0.4.3
+[0.4.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.1...v0.4.2
+[0.4.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0...v0.4.1
+[0.4.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.11...v0.4.0
+[0.4.0-rc.11]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.10...v0.4.0-rc.11
+[0.4.0-rc.10]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.9...v0.4.0-rc.10
+[0.4.0-rc.9]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.8...v0.4.0-rc.9
+[0.4.0-rc.8]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.7...v0.4.0-rc.8
+[0.4.0-rc.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.6...v0.4.0-rc.7
+[0.4.0-rc.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.5...v0.4.0-rc.6
+[0.4.0-rc.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.4...v0.4.0-rc.5
+[0.4.0-rc.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.3...v0.4.0-rc.4
+[0.4.0-rc.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.2...v0.4.0-rc.3
+[0.4.0-rc.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.1...v0.4.0-rc.2
+[0.4.0-rc.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.7...v0.4.0-rc.1
+[0.3.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.6...v0.3.7
+[0.3.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.5...v0.3.6
+[0.3.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.4...v0.3.5
+[0.3.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.3...v0.3.4
+[0.3.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.2...v0.3.3
+[0.3.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.1...v0.3.2
+[0.3.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.7...v0.3.0
+[0.2.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.6...v0.2.7
+[0.2.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.5...v0.2.6
+[0.2.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.4...v0.2.5
+[0.2.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.3...v0.2.4
+[0.2.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.2...v0.2.3
+[0.2.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.1...v0.2.2
+[0.2.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.1.5...v0.2.0
+[0.1.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.1.4...v0.1.5
+[0.1.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.1.3...v0.1.4
+[0.1.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.1.2...v0.1.3
+[0.1.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/LiteLDev/LeviAntiCheat/releases/tag/v0.1.1
