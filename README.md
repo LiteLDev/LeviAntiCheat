@@ -29,8 +29,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Fix UI item duplication
 - Fix incorrect teleport when going to bed while changing dimension
 - Fix gateway falling block duplication
-- Fix container crash when destroying that was closed by block moving
 - Fix crafter crash
+- Fix infinite block
 
 ### Client Cheating
 
@@ -84,7 +84,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
-    "version": 10,
+    "version": 12,
     "consoleLog": true,
     "worldSafety": {
         "fakeSeed": {
@@ -192,8 +192,8 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "uiItemDuplicateFix": true,
         "sleepTeleportFix": true,
         "gatewayCopyFix": true,
-        "containerCrashFix": true,
-        "crafterCrashFix": true
+        "crafterCrashFix": true,
+        "infiniteBlockFix": true
     },
     "inventoryManagement": {
         "antiAutoOffhand": true,

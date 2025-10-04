@@ -29,8 +29,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - 修复UI物品复制问题
 - 修复床超传问题
 - 折跃门刷掉落方块的问题
-- 修复破坏因方块移动而关闭的容器时崩溃的问题
 - 修复合成器合成物品时可能崩溃的问题
+- 修复无限方块
 
 ### 客户端作弊
 
@@ -84,7 +84,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ```jsonc
 {
-    "version": 10, // 配置文件版本
+    "version": 12, // 配置文件版本
     "consoleLog": true, // 是否在控制台记录日志
     "worldSafety": { // 世界安全配置
         "fakeSeed": { // 假种子配置
@@ -192,8 +192,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "uiItemDuplicateFix": true, // UI物品复制修复
         "sleepTeleportFix": true, // 睡眠传送修复
         "gatewayCopyFix": true, // 折跃门复制修复
-        "containerCrashFix": true, // 活塞推动容器时崩溃修复
-        "crafterCrashFix": true // 合成器崩溃修复
+        "crafterCrashFix": true, // 合成器崩溃修复
+        "infiniteBlockFix": true // 修复无限方块
     },
     "inventoryManagement": { // 物品管理配置
         "antiAutoOffhand": true, // 是否启用反自动副手
