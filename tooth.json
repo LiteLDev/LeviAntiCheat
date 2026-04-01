@@ -31,6 +31,16 @@
                             "dest": "plugins/LeviAntiCheat/"
                         }
                     ]
+                },
+                {
+                    "type": "self",
+                    "placements": [
+                        {
+                            "type": "dir",
+                            "src": "lang/",
+                            "dest": "plugins/LeviAntiCheat/lang/"
+                        }
+                    ]
                 }
             ]
         }
