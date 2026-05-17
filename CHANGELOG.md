@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [0.13.2] - 2026-05-17
+
+### Added
+
+- Added `FallingBlockCopyFix` configuration @zimuya4153
+
+### Removed
+
+- Removed `GatewayCopyFix` configuration @zimuya4153
+
 ## [0.13.1] - 2026-04-28
 
 - Supported LeviLamina 26.10.9
@@ -449,6 +461,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#41]: https://github.com/LiteLDev/LeviAntiCheat/issues/41
 [#44]: https://github.com/LiteLDev/LeviAntiCheat/issues/44
 
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.2...HEAD
+[0.13.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.1...v0.13.2
 [0.13.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.0...v0.13.1
 [0.13.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.12.3...v0.13.0
 [0.12.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.12.2...v0.12.3
