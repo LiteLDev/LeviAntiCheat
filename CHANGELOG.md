@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.14.0] - 2026-07-04
+
+### Added
+
+- Added `ChunkChestCrashFix` configuration @zimuya4153
+
+
+### Changed
+
+- Adapted to LeviLamina 26.20.*
+- Removed `IllegallyTradeCheck`
+
 ## [0.13.3] - 2026-05-17
 
 ### Fixed
@@ -467,7 +479,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#41]: https://github.com/LiteLDev/LeviAntiCheat/issues/41
 [#44]: https://github.com/LiteLDev/LeviAntiCheat/issues/44
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.3...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.14.0...HEAD
+[0.14.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.3...v0.14.0
 [0.13.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.2...v0.13.3
 [0.13.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.1...v0.13.2
 [0.13.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.0...v0.13.1
