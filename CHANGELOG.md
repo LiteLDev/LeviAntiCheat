@@ -7,12 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.14.1] - 2026-08-02
+
+### Fixed
+
+- Fixed crash caused by disconnect [#58]
+- Fixed AntiXray @MilvonaMilvona
+
 ## [0.14.0] - 2026-07-04
 
 ### Added
 
 - Added `ChunkChestCrashFix` configuration @zimuya4153
-
 
 ### Changed
 
@@ -478,8 +484,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#35]: https://github.com/LiteLDev/LeviAntiCheat/issues/35
 [#41]: https://github.com/LiteLDev/LeviAntiCheat/issues/41
 [#44]: https://github.com/LiteLDev/LeviAntiCheat/issues/44
+[#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.14.0...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.14.1...HEAD
+[0.14.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.14.0...v0.14.1
 [0.14.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.3...v0.14.0
 [0.13.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.2...v0.13.3
 [0.13.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.13.1...v0.13.2
