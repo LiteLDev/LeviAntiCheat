@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.2] - 2026-10-04
+
+### Added
+
+- Added event data serialization @zimuya4153
+- Added illegally trade check @zimuya4153
+
+### Changed
+
+- Rewrited the AntiXray @zimuya4153
+
 ## [0.17.1] - 2026-09-20
 
 ### Changed
@@ -524,7 +535,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#44]: https://github.com/LiteLDev/LeviAntiCheat/issues/44
 [#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.1...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.2...HEAD
+[0.17.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.1...v0.17.2
 [0.17.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.0...v0.17.1
 [0.17.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.16.1...v0.17.0
 [0.16.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.16.0...v0.16.1
