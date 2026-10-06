@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.3] - 2026-10-06
+
+### Added
+
+- Added removing player actions authority @kuangby
+- Added AntiXray debugging export @zimuya4153
+
+### Fixed
+
+- Fixed the display of kickout time [#43] @zimuya4153
+- Fixed the crash of the overloaded configuration file @zimuya4153
+
 ## [0.17.2] - 2026-10-04
 
 ### Added
@@ -532,10 +544,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#25]: https://github.com/LiteLDev/LeviAntiCheat/issues/25
 [#35]: https://github.com/LiteLDev/LeviAntiCheat/issues/35
 [#41]: https://github.com/LiteLDev/LeviAntiCheat/issues/41
+[#43]: https://github.com/LiteLDev/LeviAntiCheat/issues/43
 [#44]: https://github.com/LiteLDev/LeviAntiCheat/issues/44
 [#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.2...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.3...HEAD
+[0.17.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.2...v0.17.3
 [0.17.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.1...v0.17.2
 [0.17.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.0...v0.17.1
 [0.17.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.16.1...v0.17.0
