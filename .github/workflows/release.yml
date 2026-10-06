@@ -1,0 +1,142 @@
+name: Release
+
+on:
+  repository_dispatch:
+    types:
+      - source-release
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag of the source release to build
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build from source
+    runs-on: windows-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ secrets.SOURCE_REPO }}
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          ref: ${{ github.event.client_payload.tag || github.event.inputs.tag }}
+
+      - name: Checkout metadata
+        uses: actions/checkout@v7
+        with:
+          path: public
+
+      - uses: xmake-io/github-action-setup-xmake@v1
+
+      - uses: actions/cache@v6
+        with:
+          path: |
+            ~/AppData/Local/.xmake
+          key: xmake-${{ hashFiles('xmake.lua') }}
+          restore-keys: |
+            xmake-
+
+      - name: Setup LLVM
+        uses: ZhongRuoyu/setup-llvm@v0
+        with:
+          llvm-version: 22
+
+      - name: Update repositories
+        shell: bash
+        run: xmake repo -u
+
+      - name: Configure
+        shell: bash
+        run: xmake f -a x64 -m release -p windows -v -y
+
+      - name: Start build log
+        shell: bash
+        run: |
+          {
+            echo "LeviAntiCheat build log"
+            echo "tag: ${{ github.event.client_payload.tag || github.event.inputs.tag }}"
+            echo "sha: ${{ github.event.client_payload.sha }}"
+            echo "runner: ${{ runner.os }}"
+          } > build-log.txt
+
+      - name: Build
+        shell: bash
+        run: xmake -v -y >> build-log.txt 2>&1
+
+      - name: Package full artifact
+        shell: pwsh
+        run: |
+          Copy-Item public/CHANGELOG.md bin/
+          Compress-Archive -Path bin/* -DestinationPath LeviAntiCheat-windows-x64.zip -Force
+
+      - name: Upload full artifact to the private release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
+          TAG: ${{ github.event.client_payload.tag || github.event.inputs.tag }}
+        run: |
+          gh release upload "$TAG" LeviAntiCheat-windows-x64.zip \
+            --repo ${{ secrets.SOURCE_REPO }} \
+            --clobber
+
+      - uses: matbour/setup-sentry-cli@v3
+        with:
+          token: ${{ secrets.SENTRY_TOKEN }}
+          organization: ${{ secrets.SENTRY_ORG }}
+          project: ${{ secrets.SENTRY_PROJECT }}
+
+      - name: Upload debug symbols to Sentry
+        shell: bash
+        run: sentry-cli debug-files upload --include-sources bin
+
+      - name: Strip debug symbols
+        shell: bash
+        run: find bin -name '*.pdb' -delete
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: LeviAntiCheat-windows-x64-${{ github.event.client_payload.tag || github.event.inputs.tag }}
+          path: bin/
+
+      - name: Upload build log to the private release
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
+          TAG: ${{ github.event.client_payload.tag || github.event.inputs.tag }}
+        run: |
+          gh release upload "$TAG" build-log.txt \
+            --repo ${{ secrets.SOURCE_REPO }} \
+            --clobber
+
+  publish:
+    name: Publish public release
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - id: extract-release-notes
+        uses: ffurrer2/extract-release-notes@v3
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: LeviAntiCheat-windows-x64-${{ github.event.client_payload.tag || github.event.inputs.tag }}
+          path: artifact
+
+      - run: zip -r ../LeviAntiCheat-windows-x64.zip *
+        working-directory: artifact
+
+      - uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.event.client_payload.tag || github.event.inputs.tag }}
+          body: |
+            ${{ steps.extract-release-notes.outputs.release_notes }}
+          files: |
+            LeviAntiCheat-windows-x64.zip
