@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixed the display of kickout time [#43] @zimuya4153
 - Fixed the crash of the overloaded configuration file @zimuya4153
+- Fixed the failure of FakeSeed [#59] @zimuya4153
 
 ## [0.17.2] - 2026-10-04
 
@@ -547,6 +548,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#43]: https://github.com/LiteLDev/LeviAntiCheat/issues/43
 [#44]: https://github.com/LiteLDev/LeviAntiCheat/issues/44
 [#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
+[#59]: https://github.com/LiteLDev/LeviAntiCheat/issues/59
 
 [Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.3...HEAD
 [0.17.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.2...v0.17.3
