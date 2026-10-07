@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.4] - 2026-10-07
+
+### Changed
+
+- Optimized the repeated parsing of AntiXray configuration @@zimuya4153
+- Rename PlayerActionsAuthority to DisablePlayerActionsAuthority, and disable it by default
+
 ## [0.17.3] - 2026-10-06
 
 ### Added
@@ -550,7 +557,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
 [#59]: https://github.com/LiteLDev/LeviAntiCheat/issues/59
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.3...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.4...HEAD
+[0.17.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.3...v0.17.4
 [0.17.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.2...v0.17.3
 [0.17.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.1...v0.17.2
 [0.17.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.0...v0.17.1
