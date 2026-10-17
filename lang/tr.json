@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Siz ban edildiniz. Sebäp: {0} Wagt: {1} Ban aýryljak wagty: {2}",
     "You have been banned.": "Siz ban edildiniz.",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimension (name:{}, id:{}) AntiXray sazlamasynda tapylmady",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Tanalmadyk engine mode: {} antixray işlemän biler, jikme-jiklik üçin https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md serediň",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Tanalmadyk engine mode: {} antixray işlemän biler, jikme-jiklik üçin https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md serediň",
     "antixray engine required at least one replacement block": "antixray engine azyndan bir ornuny tutujy blok talap edýär",
     "LoginFlood from {0} detected, the address has been added to black list": "{0} tarapyndan LoginFlood anyklandy, adres gara sanawa goşuldy",
     "{0} has been banned by BanWave": "{0} BanWave tarapyndan ban edildi",

@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Вы были забанены. Причина: {0} Время: {1} Срок истечения: {2}",
     "You have been banned.": "Вы были забанены.",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "Измерение (name:{}, id:{}) не найдено в конфигурации AntiXray",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "неопознанный режим движка: {} antixray не работает, проверьте https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md для получения более подробной информации",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "неопознанный режим движка: {} antixray не работает, проверьте https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md для получения более подробной информации",
     "antixray engine required at least one replacement block": "движок антирентгеновских программ требуется хотя бы один блок замены",
     "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood от {0} обнаружен, адрес был добавлен в черный список",
     "{0} has been banned by BanWave": "{0} был забанен BanWave",
