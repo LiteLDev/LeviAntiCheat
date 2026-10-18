@@ -14,8 +14,8 @@ LeviAntiCheat 包含基于混淆的反矿物透视功能，有三种模式，可
     图片设计由 `Oberfail` 提供，最初发布在
     [PaperMC Discord](https://discord.gg/papermc)。
 
-![主世界反矿物透视对比](https://github.com/PaperMC/docs/blob/main/docs/paper/admin/how-to/assets/anti-xray-overworld.png)
-![地狱反矿物透视对比](https://github.com/PaperMC/docs/blob/main/docs/paper/admin/how-to/assets/anti-xray-nether.png)
+![主世界反矿物透视对比](https://github.com/PaperMC/docs/blob/main/src/content/docs/paper/admin/how-to/assets/anti-xray-overworld.png)
+![地狱反矿物透视对比](https://github.com/PaperMC/docs/blob/main/src/content/docs/paper/admin/how-to/assets/anti-xray-nether.png)
 
 特别是在客户端，`engine-mode: 1` 的计算成本更低，而`engine-mode: 2` 可能更能有效防止矿物透视。在`engine-mode: 1`中，只有完全被实心方块覆盖的矿物才会被隐藏。暴露在洞穴空气中或湖泊水中的矿物不会被隐藏。在`engine-mode: 2`中，假矿物会阻碍真实方块的视线。`engine-mode: 3` 可以在加入游戏时减少约一半的网络负载，并有助于区块数据包的压缩。
 

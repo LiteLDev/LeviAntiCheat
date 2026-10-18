@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "You have been banned. Reason: {0} Time: {1} Pardon time: {2}",
     "You have been banned.": "You have been banned.",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimension (name:{}, id:{}) not found in AntiXray config",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md for more detail",
     "antixray engine required at least one replacement block": "antixray engine required at least one replacement block",
     "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood from {0} detected, the address has been added to black list",
     "{0} has been banned by BanWave": "{0} has been banned by BanWave",

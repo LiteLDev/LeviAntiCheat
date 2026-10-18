@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Bạn đã bị cấm. Lý do: {0} Thời gian: {1} Thời gian được gỡ cấm: {2}",
     "You have been banned.": "Bạn đã bị cấm.",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "Không tìm thấy chiều không gian (name:{}, id:{}) trong cấu hình AntiXray",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Chế độ engine không xác định: {} antixray sẽ không hoạt động, xem https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md để biết thêm chi tiết",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Chế độ engine không xác định: {} antixray sẽ không hoạt động, xem https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md để biết thêm chi tiết",
     "antixray engine required at least one replacement block": "Engine antixray yêu cầu ít nhất một khối thay thế",
     "LoginFlood from {0} detected, the address has been added to black list": "Đã phát hiện LoginFlood từ {0}, địa chỉ đã được thêm vào danh sách đen",
     "{0} has been banned by BanWave": "{0} đã bị BanWave cấm",

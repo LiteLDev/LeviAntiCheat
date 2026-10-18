@@ -19,8 +19,8 @@ configuration in both the overworld and nether.
     Image design by `Oberfail`, initially posted in the
     [PaperMC Discord](https://discord.gg/papermc).
 
-![Overworld Anti-Xray Comparison](https://github.com/PaperMC/docs/blob/main/docs/paper/admin/how-to/assets/anti-xray-overworld.png)
-![Nether Anti-Xray Comparison](https://github.com/PaperMC/docs/blob/main/docs/paper/admin/how-to/assets/anti-xray-nether.png)
+![Overworld Anti-Xray Comparison](https://github.com/PaperMC/docs/blob/main/src/content/docs/paper/admin/how-to/assets/anti-xray-overworld.png)
+![Nether Anti-Xray Comparison](https://github.com/PaperMC/docs/blob/main/src/content/docs/paper/admin/how-to/assets/anti-xray-nether.png)
 
 Especially on the client side, `engine-mode: 1` is much less computationally intensive, while
 `engine-mode: 2` may better prevent Xray. With `engine-mode: 1`, only ores that are entirely covered
