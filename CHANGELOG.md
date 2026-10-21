@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.5] - 2026-10-21
+
+### Added
+
+- Added `BundleContainerIdentityFix` to prevent item duplication during storage container identity changes @zimuya4153
+- Added `BlockActorContainerMoveFix` to prevent container item duplication when pistons move block actors @zimuya4153
+- Added `MountedDimensionTransferFix` to prevent item duplication and ghost states during mounted dimension transfers @zimuya4153
+- Added `NestedBundleWeightFix` to preserve nested bundle content weight and capacity when flattening @zimuya4153
+- Added `DispenserShearTickFix` to prevent state inconsistencies when dispensers shear entities outside ticking chunks @zimuya4153
+- Added `SulfurCubeShearFuseFix` to prevent primed sulfur cubes from exploding after being sheared @zimuya4153
+
 ## [0.17.4] - 2026-10-07
 
 ### Changed
@@ -557,7 +568,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
 [#59]: https://github.com/LiteLDev/LeviAntiCheat/issues/59
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.4...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.5...HEAD
+[0.17.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.4...v0.17.5
 [0.17.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.3...v0.17.4
 [0.17.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.2...v0.17.3
 [0.17.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.1...v0.17.2
@@ -617,10 +629,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.3.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/6cb944c780259360ecf797929efe50b2a5ad8116...v0.3.0
-[0.2.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.6...6cb944c780259360ecf797929efe50b2a5ad8116
-[0.2.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/7281d0aae3fe9060a0625a3927f190eb469b866e...v0.2.6
-[0.2.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.4...7281d0aae3fe9060a0625a3927f190eb469b866e
+[0.3.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.7...v0.3.0
+[0.2.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.6...v0.2.7
+[0.2.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.5...v0.2.6
+[0.2.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.2.1...v0.2.2
