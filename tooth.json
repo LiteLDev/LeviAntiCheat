@@ -8,7 +8,8 @@
     "description": "Powerful anti-cheating for LeviLamina",
     "tags": [
       "platform:levilamina",
-      "anticheat"
+      "type:mod",
+      "category:anticheat"
     ],
     "avatar_url": ""
   },

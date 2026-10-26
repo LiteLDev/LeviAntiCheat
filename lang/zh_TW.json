@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "你已被封鎖。原因：{0} 時間：{1} 解封時間：{2}",
     "You have been banned.": "你已被封鎖。",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "在 AntiXray 設定中找不到維度 (name:{}, id:{})",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "未識別的引擎模式：{} antixray 將無法運作，請查看 https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md 以取得更多資訊",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md for more detail": "未識別的引擎模式：{} antixray 將無法運作，請查看 https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md 以取得更多資訊",
     "antixray engine required at least one replacement block": "antixray 引擎至少需要一個替換方塊",
     "LoginFlood from {0} detected, the address has been added to black list": "偵測到來自 {0} 的 LoginFlood，該位址已加入黑名單",
     "{0} has been banned by BanWave": "{0} 已被 BanWave 封鎖",

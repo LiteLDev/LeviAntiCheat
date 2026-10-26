@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "คุณถูกแบน เหตุผล: {0} เวลา: {1} เวลาปลดแบน: {2}",
     "You have been banned.": "คุณถูกแบน",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "ไม่พบมิติ (name:{}, id:{}) ในการตั้งค่า AntiXray",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "โหมดเอนจินไม่รู้จัก: {} antixray จะไม่ทำงาน โปรดดู https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md สำหรับรายละเอียดเพิ่มเติม",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md for more detail": "โหมดเอนจินไม่รู้จัก: {} antixray จะไม่ทำงาน โปรดดู https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md สำหรับรายละเอียดเพิ่มเติม",
     "antixray engine required at least one replacement block": "เอนจิน antixray ต้องมีบล็อกทดแทนอย่างน้อยหนึ่งบล็อก",
     "LoginFlood from {0} detected, the address has been added to black list": "ตรวจพบ LoginFlood จาก {0} และเพิ่มที่อยู่นี้ลงในบัญชีดำแล้ว",
     "{0} has been banned by BanWave": "{0} ถูกแบนโดย BanWave",

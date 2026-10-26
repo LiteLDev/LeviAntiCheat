@@ -11,7 +11,7 @@
     "You have been banned. Reason: {0} Time: {1} Pardon time: {2}": "Anda telah diblokir. Alasan: {0} Waktu: {1} Waktu pengampunan: {2}",
     "You have been banned.": "Anda telah diblokir.",
     "Dimension (name:{}, id:{}) not found in AntiXray config": "Dimensi (name:{}, id:{}) tidak ditemukan di konfigurasi AntiXray",
-    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/main/anti_x_ray.md for more detail": "Mode mesin tidak dikenal: {} antixray tidak akan berfungsi, lihat https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md untuk detail lebih lanjut",
+    "unidentified engine mode: {} antixray won't work, check https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md for more detail": "Mode mesin tidak dikenal: {} antixray tidak akan berfungsi, lihat https://github.com/LiteLDev/LeviAntiCheat/blob/release/anti_x_ray.md untuk detail lebih lanjut",
     "antixray engine required at least one replacement block": "Mesin antixray membutuhkan setidaknya satu blok pengganti",
     "LoginFlood from {0} detected, the address has been added to black list": "LoginFlood dari {0} terdeteksi, alamat telah ditambahkan ke daftar hitam",
     "{0} has been banned by BanWave": "{0} telah diblokir oleh BanWave",
