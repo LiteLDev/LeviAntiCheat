@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.7] - 2026-11-04
+
+### Fixed
+
+- Fixed AntiXray is not enabled correctly @Milvona
+- Fixed ClientSideChunkGen is not disabled
+
 ## [0.17.6] - 2026-10-22
 
 ### Changed
@@ -578,7 +585,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#58]: https://github.com/LiteLDev/LeviAntiCheat/issues/58
 [#59]: https://github.com/LiteLDev/LeviAntiCheat/issues/59
 
-[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.6...HEAD
+[Unreleased]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.7...HEAD
+[0.17.7]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.6...v0.17.7
 [0.17.6]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.5...v0.17.6
 [0.17.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.4...v0.17.5
 [0.17.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.17.3...v0.17.4

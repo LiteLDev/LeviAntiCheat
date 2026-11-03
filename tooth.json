@@ -2,14 +2,13 @@
   "format_version": 3,
   "format_uuid": "289f771f-2c9a-4d73-9f3f-8492495a924d",
   "tooth": "github.com/LiteLDev/LeviAntiCheat",
-  "version": "0.17.6",
+  "version": "0.17.7",
   "info": {
     "name": "LeviAntiCheat",
     "description": "Powerful anti-cheating for LeviLamina",
     "tags": [
       "platform:levilamina",
-      "type:mod",
-      "category:anticheat"
+      "anticheat"
     ],
     "avatar_url": ""
   },
