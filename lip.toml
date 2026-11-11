@@ -1,0 +1,24 @@
+format = 4
+id = "github.com/LiteLDev/LeviAntiCheat"
+version = "0.18.0"
+
+[info]
+name = "LeviAntiCheat"
+description = "Powerful anti-cheating for LeviLamina"
+tags = ["anticheat"]
+
+[[variants.""]]
+side = "server"
+platform = "win-x64"
+
+[variants."".deps]
+"github.com/LiteLDev/LeviLamina" = "26.60.*"
+
+[[variants."".assets]]
+type = "zip"
+urls = ["https://{{id}}/releases/download/v{{version}}/LeviAntiCheat-windows-x64.zip"]
+place = [{ src = "LeviAntiCheat/", dest = "mods/LeviAntiCheat/" }]
+
+[[variants."".assets]]
+type = "self"
+place = [{ src = "lang/", dest = "mods/LeviAntiCheat/lang/" }]
