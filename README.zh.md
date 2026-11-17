@@ -37,7 +37,6 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - 修复嵌套收纳袋展开时内容物重量与容量丢失的问题
 - 防止存储容器身份变化时的物品复制
 - 防止活塞推动方块实体时的容器物品复制
-- 防止骑乘状态下跨维度时的物品复制与幽灵状态
 
 ### 客户端作弊
 
@@ -84,7 +83,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ### 配置文件
 
-配置文件位于 `plugins/LeviAntiCheat/config/config.json`，默认配置如下。有关AntiXray子模块的详细说明，请参照[此文档](anti_x_ray.zh.md)。
+配置文件位于 `mods/LeviAntiCheat/config/config.json`，默认配置如下。有关AntiXray子模块的详细说明，请参照[此文档](anti_x_ray.zh.md)。
 
 ```jsonc
 {
@@ -160,8 +159,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "sulfurCubeShearFuseFix": true, // 硫磺立方体剪切后爆炸修复
         "nestedBundleWeightFix": true, // 嵌套收纳袋重量与容量修复
         "bundleContainerIdentityFix": true, // 存储容器身份变化复制修复
-        "blockActorContainerMoveFix": true, // 活塞推动容器复制修复
-        "mountedDimensionTransferFix": true // 骑乘跨维度复制修复
+        "blockActorContainerMoveFix": true // 活塞推动容器复制修复
     },
     "inventoryManagement": { // 物品管理配置
         "antiAutoOffhand": true, // 是否启用反自动副手

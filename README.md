@@ -37,7 +37,6 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Preserve the weight and capacity of nested bundle contents when flattening
 - Prevent item duplication when a storage container's identity changes
 - Prevent container item duplication when pistons move block actors
-- Prevent item duplication and ghost states during mounted dimension transfers
 
 ### Client Cheating
 
@@ -84,7 +83,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ### Configuration file
 
-The configuration file is `plugins/LeviAntiCheat/config/config.json`. The default configuration is shown below. For X-Ray prevention, see [here](anti_x_ray.md).
+The configuration file is `mods/LeviAntiCheat/config/config.json`. The default configuration is shown below. For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
@@ -160,8 +159,7 @@ The configuration file is `plugins/LeviAntiCheat/config/config.json`. The defaul
         "sulfurCubeShearFuseFix": true, // Prevent primed sulfur cubes from exploding after being sheared
         "nestedBundleWeightFix": true, // Preserve nested bundle weight and capacity when flattening
         "bundleContainerIdentityFix": true, // Prevent duplication when a storage container's identity changes
-        "blockActorContainerMoveFix": true, // Prevent duplication when pistons move containers
-        "mountedDimensionTransferFix": true // Prevent duplication during mounted dimension transfers
+        "blockActorContainerMoveFix": true // Prevent duplication when pistons move containers
     },
     "inventoryManagement": {
         "antiAutoOffhand": true, // Prevent auto offhand
